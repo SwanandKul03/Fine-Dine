@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fine Dine — Supplied prototype</title><script src="resources/8705780f-7f00-4105-9529-3e3d13eaabea.js"></script><script src="resources/366a8833-2142-4528-80a5-9f78a478774e.js"></script><script src="resources/ee9f1e0b-ec2c-49a6-8141-132677fb97d0.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/555c3bff-94ee-4815-a089-0489f42b5bf3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/5a77fcc0-7e3f-4f8b-bdb9-5336dc896276.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/61e78b46-843d-4245-bd8f-48d17c4df398.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/555c3bff-94ee-4815-a089-0489f42b5bf3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/5a77fcc0-7e3f-4f8b-bdb9-5336dc896276.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/61e78b46-843d-4245-bd8f-48d17c4df398.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/555c3bff-94ee-4815-a089-0489f42b5bf3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/5a77fcc0-7e3f-4f8b-bdb9-5336dc896276.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/61e78b46-843d-4245-bd8f-48d17c4df398.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/555c3bff-94ee-4815-a089-0489f42b5bf3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/5a77fcc0-7e3f-4f8b-bdb9-5336dc896276.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("resources/61e78b46-843d-4245-bd8f-48d17c4df398.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("resources/5a4e4033-402c-4d25-8540-192147551ac3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("resources/0f8e9121-5ded-4449-a0c3-f86ee7ef212e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("resources/5a4e4033-402c-4d25-8540-192147551ac3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("resources/0f8e9121-5ded-4449-a0c3-f86ee7ef212e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("resources/5a4e4033-402c-4d25-8540-192147551ac3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("resources/0f8e9121-5ded-4449-a0c3-f86ee7ef212e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("resources/5a4e4033-402c-4d25-8540-192147551ac3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("resources/0f8e9121-5ded-4449-a0c3-f86ee7ef212e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("resources/5a4e4033-402c-4d25-8540-192147551ac3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("resources/0f8e9121-5ded-4449-a0c3-f86ee7ef212e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>body{margin:0;background:#080706;font-family:'Figtree',sans-serif}a{color:oklch(0.74 0.16 58)}a:hover{color:oklch(0.82 0.13 62)}*{box-sizing:border-box}button{font-family:inherit;cursor:pointer}</style>
+
+<style>html,body{margin:0;height:100%;overflow:hidden}body{background:#100e0c}#dc-root{height:100dvh;width:100%}#dc-root>.sc-host{height:100%;width:100%}#dc-root>.sc-host>[data-dc-tpl],x-dc>div{width:100%!important;height:100dvh!important;border-radius:0!important;border:0!important}x-dc{display:block;width:100%;height:100dvh}button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}</style></helmet>
+<div style="{{ themeVars }};transition:background-color .3s,color .3s;width:340px;height:736px;border-radius:40px;overflow:hidden;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);border:1px solid var(--line);font-family:'Figtree',sans-serif;position:relative">
+  <div style="height:44px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px 0 30px;color:var(--ink);font-family:'Figtree',sans-serif;letter-spacing:-.01em"><span style="font-size:15px;font-weight:600">20:16</span><span style="display:flex;align-items:center;gap:6px"><span style="display:flex;align-items:flex-end;gap:2px;height:11px"><span style="width:3px;height:4px;border-radius:1px;background:currentColor"></span><span style="width:3px;height:6px;border-radius:1px;background:currentColor"></span><span style="width:3px;height:8px;border-radius:1px;background:currentColor"></span><span style="width:3px;height:11px;border-radius:1px;background:currentColor"></span></span><span style="font-size:12px;font-weight:600">5G</span><span style="display:flex;align-items:center;gap:1px"><span style="width:22px;height:11px;border:1.5px solid var(--mut);border-radius:3px;padding:1px;display:flex"><span style="width:72%;background:currentColor;border-radius:1px"></span></span><span style="width:2px;height:4px;background:var(--mut);border-radius:0 1px 1px 0"></span></span></span></div>
+  <div style="flex:1;overflow-y:auto;overflow-x:hidden;position:relative;scrollbar-width:none">
+    <sc-if value="{{ isFloor }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span aria-hidden="true" style="width:32px;height:32px;flex:none;border-radius:16px;background:var(--s2);display:flex;align-items:center;justify-content:center;color:var(--meta)"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.8"></circle><path d="M4.5 20c1.4-3.6 4.2-5.4 7.5-5.4s6.1 1.8 7.5 5.4"></path></svg></span>
+          <span style="flex:1;min-width:0;display:flex;align-items:baseline;gap:4px;white-space:nowrap;overflow:hidden"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Leela</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">· Station 1</span></span>
+          <span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;flex:none;display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:12px;border:1px solid var(--line);font-variant-numeric:tabular-nums;">until 12:30</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-family:'Cabin',sans-serif;font-size:44px;line-height:48px;font-weight:400;">Floor</span><button sc-camel-on-click="{{ toggleTheme }}" aria-label="Switch day or night mode" style="flex:none;width:44px;height:44px;border-radius:22px;border:1px solid var(--line);background:var(--s1);color:var(--ink);display:flex;align-items:center;justify-content:center"><sc-if value="{{ themeDay }}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path></svg></sc-if><sc-if value="{{ themeNight }}" hint-placeholder-val="{{ true }}"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"></path></svg></sc-if></button></div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:4px;padding:4px;height:48px;border-radius:12px;background:var(--s1)">
+          <button sc-camel-on-click="{{ goEast }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;border:0;border-radius:9px;background:{{ eastBg }};color:{{ eastFg }}">East</button>
+          <button sc-camel-on-click="{{ goWest }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;border:0;border-radius:9px;background:{{ westBg }};color:{{ westFg }}">West</button>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin:8px 0 -4px">
+          <span style="display:flex;gap:8px;align-items:center"><span style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;">{{ filterLine }}</span><button sc-camel-on-click="{{ clearFilter }}" style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ clearD }};height:28px;padding:0 8px;border-radius:8px;border:0;background:var(--s2);color:var(--ink)">Clear</button></span>
+          <button sc-camel-on-click="{{ goMap }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink)">Map View</button>
+        </div>
+        <sc-if value="{{ isEast }}" hint-placeholder-val="{{ false }}"><div style="padding:64px 16px;text-align:center;display:flex;flex-direction:column;gap:4px"><div style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;">No upcoming reservations</div><div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">East opens at 21:00 for Kim · 6.</div></div></sc-if>
+        <sc-if value="{{ isWest }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column;gap:8px">
+          <sc-for list="{{ tables }}" as="t" hint-placeholder-count="4">
+            <div sc-camel-on-click="{{ t.open }}" style="cursor:pointer;border:1px solid {{ t.edge }};background:var(--s1);border-radius:12px;padding:16px;color:var(--ink);display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px">
+              <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;">{{ t.id }}</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;white-space:nowrap;color:{{ t.leftFg }}">{{ t.left }}</span></div>
+              <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+                <div style="display:flex;align-items:center;gap:8px;min-width:0;height:32px"><span style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0">{{ t.name }}</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);flex:none">{{ t.pax }}</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ t.vipD }};flex:none;height:24px;line-height:22px;padding:0 8px;border:1px solid var(--dim);border-radius:12px">VIP</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ t.alD }};margin-left:auto;flex:none;white-space:nowrap;align-items:center;gap:4px;height:24px;padding:0 8px;border-radius:12px;border:1px solid var(--allergy)"><span>{{ t.allergy }}</span><span style="font-weight:400;color:var(--meta)">{{ t.seat }}</span></span></div>
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px"><sc-for list="{{ t.courses }}" as="c" hint-placeholder-count="4"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="height:6px;border-radius:3px;background:#000;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden"><div style="height:6px;width:{{ c.w }};border-radius:3px;background:{{ c.bg }}"></div></div><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);color:{{ c.fg }};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.label }}</span></div></sc-for></div>
+              </div>
+              <div style="grid-column:1 / -1;display:{{ t.rowD }};align-items:center;gap:12px"><sc-if value="{{ t.hasAct }}" hint-placeholder-val="{{ false }}"><sc-if value="{{ t.hasTimer }}" hint-placeholder-val="{{ false }}"><span style="position:relative;width:44px;height:44px;flex:none;opacity:{{ t.tm.op }}"><svg width="44" height="44" sc-camel-view-box="0 0 44 44" style="transform:rotate(-90deg);display:block"><circle cx="22" cy="22" r="20" fill="none" stroke="var(--line)" stroke-width="2.5"></circle><circle cx="22" cy="22" r="20" fill="none" stroke="{{ t.tm.col }}" stroke-width="3" stroke-linecap="round" stroke-dasharray="125.66" stroke-dashoffset="{{ t.tm.off }}" style="transition:stroke-dashoffset 1s linear"></circle></svg><span style="font-family:'Figtree',sans-serif;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;line-height:12px;font-weight:600;text-align:center;white-space:nowrap"><span>{{ t.tm.l1 }}</span><span style="color:var(--meta)">{{ t.tm.l2 }}</span></span></span></sc-if><button sc-camel-on-click="{{ t.act }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;width:120px;margin-left:auto;height:44px;border-radius:10px;border:0;background:var(--ink);color:var(--bg);white-space:nowrap">{{ t.actLabel }}</button></sc-if></div>
+            </div>
+          </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isMap }}" hint-placeholder-val="{{ false }}">
+      <div style="position:relative;padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:'Cabin',sans-serif;font-size:44px;line-height:48px;font-weight:400;">Floor</span><button sc-camel-on-click="{{ goList }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink)">List View</button></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);display:flex;flex-wrap:wrap;gap:4px 12px"><sc-for list="{{ legend }}" as="l" hint-placeholder-count="3"><span style="display:flex;gap:4px;align-items:center"><span style="width:12px;height:12px;flex:none;border-radius:6px;border:2px {{ l.ls }} {{ l.c }};background:{{ l.f }}"></span>{{ l.label }}</span></sc-for></div>
+        <div sc-camel-on-click="{{ pickTable }}" style="position:relative;height:480px;border-radius:12px;background:var(--s1b);cursor:pointer">
+          <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;position:absolute;left:10px;top:12px;width:56px;height:84px;border-radius:6px;background:var(--s2);color:var(--meta);display:flex;align-items:center;justify-content:center">Kitchen</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;position:absolute;left:10px;top:104px;width:56px;height:60px;border-radius:6px;background:var(--s2);color:var(--meta);display:flex;align-items:center;justify-content:center">Stn 1</div>
+          <button style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:84px;top:14px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 30%,var(--line) 0) border-box;color:var(--ink)">T1</button>
+          
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:148px;top:14px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 80%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T2</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:212px;top:14px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 15%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T3</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:84px;top:78px;width:52px;height:52px;border-radius:26px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T6</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:148px;top:78px;width:52px;height:52px;border-radius:26px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T5</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:212px;top:78px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 55%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T4</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:84px;top:142px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 70%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T10</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:148px;top:142px;width:52px;height:52px;border-radius:26px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T11</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:212px;top:142px;width:52px;height:52px;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 60%,var(--line) 0) border-box;color:var(--ink);display:flex;align-items:center;justify-content:center">T12</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:10px;top:218px;width:96px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 20%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T30</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:10px;top:272px;width:44px;height:44px;border-radius:8px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T31</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:62px;top:272px;width:44px;height:44px;border-radius:8px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T32</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:150px;top:218px;width:44px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 45%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T21</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:202px;top:218px;width:44px;height:44px;border-radius:8px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T22</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:254px;top:218px;width:44px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 90%,var(--line) 0) border-box;color:var(--ink);display:flex;align-items:center;justify-content:center">T23</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:150px;top:272px;width:44px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 35%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T24</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:202px;top:272px;width:44px;height:44px;border-radius:8px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">T25</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:254px;top:272px;width:44px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 65%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">T26</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;position:absolute;left:10px;top:346px;width:56px;height:70px;border-radius:6px;background:var(--s2);color:var(--meta);display:flex;align-items:center;justify-content:center">Stn 2</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:80px;top:336px;width:44px;height:56px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 50%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">40</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:80px;top:404px;width:80px;height:44px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 40%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">41</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:180px;top:336px;width:80px;height:44px;border-radius:8px;border:1.5px dashed var(--dim2);display:flex;align-items:center;justify-content:center;color:var(--dim);font-weight:400">50</div>
+          <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;position:absolute;left:224px;top:392px;width:44px;height:56px;border-radius:8px;border:3px solid transparent;background:linear-gradient(var(--s1b),var(--s1b)) padding-box,conic-gradient(var(--ink) 75%,var(--line) 0) border-box;display:flex;align-items:center;justify-content:center">51</div>
+        </div>
+      <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;left:16px;right:16px;bottom:16px;border-radius:16px;background:var(--s1);border:1px solid var(--line);box-shadow:0 12px 32px rgba(0,0,0,.45);padding:16px;display:flex;flex-direction:column;gap:12px;z-index:5">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;">{{ sel.id }}</span>
+            <span style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ sel.name }}</span>
+            <span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">{{ sel.pax }}</span>
+            <span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ sel.vipD }};height:24px;line-height:22px;padding:0 8px;border:1px solid var(--dim);border-radius:12px">VIP</span>
+            <button sc-camel-on-click="{{ closeSel }}" aria-label="Close" style="margin-left:auto;flex:none;width:40px;height:40px;border-radius:20px;border:1px solid var(--line);background:none;color:var(--ink);font-size:18px;line-height:1">×</button>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;">{{ sel.status }}</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;white-space:nowrap">{{ sel.left }}</span></div>
+          <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ sel.alD }};align-self:flex-start;align-items:center;gap:4px;height:24px;padding:0 8px;border-radius:12px;border:1px solid var(--allergy)"><span>{{ sel.allergy }}</span><span style="font-weight:400;color:var(--meta)">{{ sel.seat }}</span></div>
+          <div style="display:{{ sel.crsD }}"><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px"><sc-for list="{{ sel.courses }}" as="c" hint-placeholder-count="4"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="height:6px;border-radius:3px;background:#000;box-shadow:inset 0 0 0 1px var(--line);overflow:hidden"><div style="height:6px;width:{{ c.w }};border-radius:3px;background:{{ c.bg }}"></div></div><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);color:{{ c.fg }};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.label }}</span></div></sc-for></div></div>
+          <button sc-camel-on-click="{{ sel.go }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;height:44px;border-radius:10px;border:0;background:var(--ink);color:var(--bg)">{{ sel.cta }}</button>
+        </div>
+      </sc-if>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isTable }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <button sc-camel-on-click="{{ goList }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;align-self:flex-start;height:40px;margin:-8px 0 -12px;padding:0;border:0;background:none;color:var(--meta)">‹ Floor</button>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <div style="display:flex;align-items:center;gap:8px"><span style="font-family:'Cabin',sans-serif;font-size:44px;line-height:48px;font-weight:400;">Table 1</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;height:24px;line-height:22px;padding:0 8px;border:1px solid var(--dim);border-radius:12px">VIP</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);margin-left:auto;font-variant-numeric:tabular-nums;">35m left</span></div>
+          <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Malti Kale · 3 pax</div>
+        </div>
+        <div style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;border-radius:12px;border:1.5px solid var(--allergy);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--ink)"><span>Nut allergy · Seat 3</span></div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:4px;height:48px;border-radius:12px;background:var(--s1)"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Drinks</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Starters</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;font-weight:600;background:var(--s3);color:var(--ink);display:flex;align-items:center;justify-content:center;border-radius:9px">Mains</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Dessert</span></div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Sole</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Seat 1</span></span><span style="display:flex;flex-direction:column;gap:4px;align-items:flex-end;text-align:right"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;">Ready</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Locked</span></span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Baby chicken</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Seat 2</span></span><span style="display:flex;flex-direction:column;gap:4px;align-items:flex-end;text-align:right"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;">Ready</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Locked</span></span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid transparent"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Broccoli</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Shared</span></span><span style="display:flex;flex-direction:column;gap:4px;align-items:flex-end;text-align:right"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;">Not started</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;">Modify</span></span></div>
+        </div>
+        <button sc-camel-on-click="{{ goOrder }}" style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;height:52px;border-radius:12px;border:0;background:var(--ink);color:var(--bg)">Add Order</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isOrder }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <button sc-camel-on-click="{{ goTable }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;align-self:flex-start;height:40px;margin:-8px 0 -12px;padding:0;border:0;background:none;color:var(--meta)">‹ Back</button>
+        <div style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;">Add Order · {{ orderFor }}</div>
+        <sc-if value="{{ hasAlg }}" hint-placeholder-val="{{ false }}"><div style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;border-radius:12px;border:1.5px solid var(--allergy);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--ink)"><span>{{ algTitle }}</span></div></sc-if>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:4px;height:48px;border-radius:12px;background:var(--s1)"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;font-weight:600;background:var(--s3);color:var(--ink);display:flex;align-items:center;justify-content:center;border-radius:9px">Seat 1</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Seat 2</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Seat 3</span><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;color:var(--meta);display:flex;align-items:center;justify-content:center;border-radius:9px">Table</span></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;display:flex;gap:16px;border-bottom:1px solid var(--s2)"><span style="padding:8px 0;font-weight:600;border-bottom:2px solid var(--ink);margin-bottom:-1px">Drinks</span><span style="padding:8px 0;color:var(--meta)">Starters</span><span style="padding:8px 0;color:var(--meta)">Mains</span><span style="padding:8px 0;color:var(--meta)">Desserts</span></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">Cocktails</div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <sc-for list="{{ drinks }}" as="d" hint-placeholder-count="4"><div style="display:flex;align-items:center;gap:8px;padding:6px 0;min-height:56px;border-bottom:1px solid {{ d.line }}"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;flex:1">{{ d.name }}</span><button sc-camel-on-click="{{ d.dec }}" style="display:{{ d.decD }};width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink);font-size:20px;line-height:1">−</button><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;display:{{ d.decD }};width:24px;text-align:center;font-variant-numeric:tabular-nums;">{{ d.n }}</span><button sc-camel-on-click="{{ d.inc }}" style="width:44px;height:44px;border-radius:10px;border:0;background:var(--s2);color:var(--ink);font-size:20px;line-height:1">+</button></div></sc-for>
+        </div>
+        <div style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Mocktails · Wine · Whisky · Gin · Beer</div>
+        <div style="display:grid;grid-template-columns:1fr 2fr;gap:8px">
+          <button sc-camel-on-click="{{ cancelOrder }}" style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;height:52px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--ink)">Cancel</button>
+          <button sc-camel-on-click="{{ sendOrder }}" style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;height:52px;border-radius:12px;border:0;background:{{ sendBg }};color:{{ sendFg }}">{{ sendLabel }}</button>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isKitchen }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:'Cabin',sans-serif;font-size:44px;line-height:48px;font-weight:400;">Kitchen</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;">7 items · 3 tables</span></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+          <div style="border-radius:12px;background:var(--s1);padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Ready</span><span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;font-variant-numeric:tabular-nums;">2</span></div>
+          <div style="border-radius:12px;background:var(--s1);padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Cooking</span><span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;font-variant-numeric:tabular-nums;">2</span></div>
+          <div style="border-radius:12px;background:var(--s1);padding:12px;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Queued</span><span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;font-variant-numeric:tabular-nums;">3</span></div>
+        </div>
+        <div style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;border-radius:12px;border:1.5px solid var(--red);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--ink)"><span>Delay · Table 1 mains</span><span style="font-variant-numeric:tabular-nums;">+4 min</span></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">Ready to plate</div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Table 1 · mains</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;color:var(--allergy)">Seat 3 nut-free</span></span><button sc-camel-on-click="{{ r1.tap }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:44px;width:120px;padding:0 8px;border-radius:10px;border:1.5px solid {{ r1.border }};background:{{ r1.bg }};color:{{ r1.fg }}">{{ r1.label }}</button></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;flex:1">Table 12 · sides</span><button sc-camel-on-click="{{ r12.tap }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:44px;width:120px;padding:0 8px;border-radius:10px;border:1.5px solid {{ r12.border }};background:{{ r12.bg }};color:{{ r12.fg }}">{{ r12.label }}</button></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid transparent"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;flex:1">Table 54 · starters</span><button sc-camel-on-click="{{ r54.tap }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:44px;width:120px;padding:0 8px;border-radius:10px;border:1.5px solid {{ r54.border }};background:{{ r54.bg }};color:{{ r54.fg }}">{{ r54.label }}</button></div>
+        </div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">Queue</div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Tuna tartare</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">T54</span></span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;">Modify</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Burrata</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">T54</span></span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;">Modify</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid transparent"><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">Broccoli</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">T1</span></span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;">Modify</span></div>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isAlerts }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:8px 16px 24px;display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font-family:'Cabin',sans-serif;font-size:44px;line-height:48px;font-weight:400;">Alerts</span><button style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink)">Mark All Read</button></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">Safety</div>
+        <div style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;border-radius:12px;border:1.5px solid var(--allergy);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--ink)"><span>Nut allergy · Table 1, seat 3</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;">20:07</span></div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">On the pass</div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <sc-for list="{{ passRows }}" as="pr" hint-placeholder-count="4"><div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid {{ pr.line }}"><span style="position:relative;width:44px;height:44px;flex:none;opacity:{{ pr.tm.op }}"><svg width="44" height="44" sc-camel-view-box="0 0 44 44" style="transform:rotate(-90deg);display:block"><circle cx="22" cy="22" r="20" fill="none" stroke="var(--line)" stroke-width="2.5"></circle><circle cx="22" cy="22" r="20" fill="none" stroke="{{ pr.tm.col }}" stroke-width="3" stroke-linecap="round" stroke-dasharray="125.66" stroke-dashoffset="{{ pr.tm.off }}" style="transition:stroke-dashoffset 1s linear"></circle></svg><span style="font-family:'Figtree',sans-serif;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;line-height:12px;font-weight:600;text-align:center;white-space:nowrap"><span>{{ pr.tm.l1 }}</span><span style="color:var(--meta)">{{ pr.tm.l2 }}</span></span></span><span style="flex:1;min-width:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:500;">{{ pr.name }}</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);white-space:nowrap;display:{{ pr.subD }}">{{ pr.sub }}</span></span><button sc-camel-on-click="{{ pr.tap }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:44px;width:120px;padding:0 8px;border-radius:10px;border:1.5px solid {{ pr.border }};background:{{ pr.bg }};color:{{ pr.fg }}">{{ pr.label }}</button></div></sc-for>
+        </div>
+        <div style="font-family:'Figtree',sans-serif;font-size:18px;line-height:24px;font-weight:600;margin:8px 0 -4px">Earlier</div>
+        <div style="background:var(--s1);border-radius:12px;padding:0 16px">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid var(--s2)"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;flex:1">Table 5 requesting dessert menu</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;">20:10</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;min-height:56px;border-bottom:1px solid transparent"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;flex:1">Lounge ready to move 302 to Table 5</span><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);font-variant-numeric:tabular-nums;">20:01</span></div>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+  <sc-if value="{{ hasUndo }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:16px;right:16px;bottom:90px;z-index:20;border-radius:12px;background:var(--ink);color:var(--bg);height:56px;padding:0 6px 0 16px;display:flex;align-items:center;gap:12px;overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,.4)"><span style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:400;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ undoLabel }}</span><button sc-camel-on-click="{{ doUndo }}" style="font-family:'Figtree',sans-serif;font-size:14px;line-height:20px;font-weight:600;flex:none;height:44px;padding:0 12px;border-radius:10px;border:0;background:var(--bg);color:var(--ink);display:flex;align-items:center;gap:8px;white-space:nowrap"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"></path><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"></path></svg>Undo<span style="font-weight:400;font-variant-numeric:tabular-nums;color:var(--meta)">{{ undoSec }}s</span></button><span style="position:absolute;left:0;bottom:0;height:3px;width:{{ undoW }};background:var(--acc);transition:width 1s linear"></span></div></sc-if>
+  <sc-if value="{{ allergyAsk }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;z-index:30;background:rgba(0,0,0,.6);display:flex;align-items:flex-end;padding:16px 16px 90px"><div style="width:100%;border-radius:16px;background:var(--s1);border:1.5px solid var(--allergy);padding:16px;display:flex;flex-direction:column;gap:16px"><div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:400;color:var(--meta);">Allergy check · {{ orderFor }}</span><span style="font-family:'Figtree',sans-serif;font-size:24px;line-height:32px;font-weight:600;">{{ algTitle }}</span></div><div style="display:grid;grid-template-columns:1fr 2fr;gap:8px"><button sc-camel-on-click="{{ algBack }}" style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;height:52px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--ink)">Back</button><button sc-camel-on-click="{{ algConfirm }}" style="font-family:'Figtree',sans-serif;font-size:16px;line-height:24px;font-weight:600;height:52px;border-radius:12px;border:0;background:var(--ink);color:var(--bg)">Confirm &amp; Send</button></div></div></div></sc-if>
+  <div style="flex:none;display:grid;grid-template-columns:repeat(3,1fr);background:var(--s0);border-top:1px solid var(--line2);padding-bottom:16px">
+    <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="3">
+      <button sc-camel-on-click="{{ tab.go }}" style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;height:56px;border:0;background:none;color:{{ tab.fg }};display:flex;align-items:center;justify-content:center;position:relative;border-top:2px solid {{ tab.bar }}">
+        <span>{{ tab.label }}</span>
+        <span style="font-family:'Figtree',sans-serif;font-size:12px;line-height:16px;font-weight:600;display:{{ tab.bD }};position:absolute;top:8px;right:22%;min-width:18px;height:18px;line-height:18px;padding:0 5px;border-radius:9px;background:var(--acc);color:var(--bg);font-size:11px;align-items:center;justify-content:center">{{ tab.badge }}</span>
+      </button>
+    </sc-for>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:360,&quot;height&quot;:760},&quot;screen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;floor&quot;,&quot;map&quot;,&quot;table&quot;,&quot;order&quot;,&quot;kitchen&quot;,&quot;alerts&quot;],&quot;default&quot;:&quot;floor&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;night&quot;,&quot;day&quot;],&quot;default&quot;:&quot;night&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const CS={n:{bg:'transparent',w:'0'},o:{bg:'oklch(0.66 0.21 25)',w:'6px'},p:{bg:'oklch(0.85 0.16 88)',w:'50%'},r:{bg:'oklch(0.78 0.18 150)',w:'100%'},s:{bg:'var(--dim2)',w:'100%'}};
+const K={ink:'var(--ink)',mut:'var(--mut)',dim:'var(--dim2)',acc:'var(--acc)',ready:'var(--green)',cook:'var(--blue)',red:'var(--red)',track:'var(--s2)',bg:'var(--bg)',line:'var(--line)'};
+const S={
+late:{label:'Waiting',c:'var(--red)',fg:K.bg,rank:0},
+pass:{label:'On pass',c:'var(--green)',fg:K.bg,rank:1},
+order:{label:'To order',c:'var(--violet)',fg:K.bg,rank:2},
+bill:{label:'Bill',c:'var(--pink)',fg:K.bg,rank:3},
+cook:{label:'Cooking',c:'var(--blue)',fg:K.bg,rank:4},
+eating:{label:'Eating',c:'var(--ink)',fg:K.bg,rank:5,neutral:true},
+seated:{label:'Seated',c:'var(--mut)',fg:K.bg,rank:6,neutral:true}};
+const TABLES=[
+{id:'T23',name:'Columbus',pax:'2p',left:'90m',c:['s','n','n','n'],status:'Waiting 12 min',st:'late',allergy:'Dairy',seat:'S1'},
+{id:'T1',name:'Malti',pax:'3p',vip:true,left:'35m',c:['s','s','r','o'],status:'Mains on pass · 2:10',st:'pass',allergy:'Nut',seat:'S3'},
+{id:'T2',name:'Hart',pax:'2p',left:'100m',c:['p','n','n','n'],status:'Ready to order',st:'order'},
+{id:'T4',name:'Okafor',pax:'4p',left:'10m',c:['s','s','s','s'],status:'Bill requested',st:'bill'},
+{id:'T3',name:'Yuzi',pax:'4p',left:'20m',c:['s','s','s','p'],status:'Desserts cooking',st:'cook'},
+{id:'T30',name:'Nick',pax:'2p',left:'45m',c:['s','s','s','o'],status:'Eating mains',st:'eating'},
+{id:'T51',name:'Ruby',pax:'2p',left:'110m',c:['o','n','n','n'],status:'Seated · menus out',st:'seated'}];
+const LEGEND=[['late','solid',1],['pass','solid',1],['order','solid',0],['bill','solid',0],['cook','solid',0],['eating','solid',0],['seated','solid',0]];
+class Component extends DCLogic{
+constructor(p){super(p);const N=Date.now();this.state={t0:N,now:N,lastSync:N,offline:false,claim:{},pass:{sole:'arjun'},confirmed:{T1:'20:07'},undo:null,allergyAsk:false,theme:p.theme||'night',screen:['floor','map','table','order','kitchen','alerts'].includes(new URLSearchParams(location.search).get('screen'))?new URLSearchParams(location.search).get('screen'):(p.screen||'floor'),zone:'West',ready:{},done:{},filter:null,collected:{},qty:{'Pink Cadillac':3},orderFor:'T1'};}
+go(s){this.setState({screen:s,mapSel:null});}
+componentDidMount(){this.caseMessage=e=>{if(e.origin!==location.origin||e.source!==window.parent)return;if(e.data?.type==='oblix:task'){this.go(['floor','table','kitchen','alerts'][e.data.task]||'floor');}if(e.data?.type==='oblix:screen'&&['floor','map','table','order','kitchen','alerts'].includes(e.data.screen))this.go(e.data.screen);if(e.data?.type==='oblix:reset')location.reload();};window.addEventListener('message',this.caseMessage);window.parent.postMessage({type:'oblix:ready'},location.origin);this.iv=setInterval(()=>this.setState(x=>{const n=Date.now();return{now:n,lastSync:x.offline?x.lastSync:(n-x.lastSync>=5000?n:x.lastSync)};}),1000);}
+componentWillUnmount(){window.removeEventListener('message',this.caseMessage);clearInterval(this.iv);}
+withUndo(label,patch){const s=this.state;const snap={ready:s.ready,done:s.done,pass:s.pass,claim:s.claim,confirmed:s.confirmed};this.setState({...patch(s),undo:{label,snap,until:Date.now()+5000}});}
+renderVals(){const s=this.state,st0=s;if(this.caseLastScreen!==s.screen){this.caseLastScreen=s.screen;window.parent.postMessage({type:'oblix:view',screen:s.screen},location.origin);}const now=s.now;const fmt=sec=>{const a=Math.abs(Math.round(sec));return (sec<0?'+':'')+Math.floor(a/60)+':'+String(a%60).padStart(2,'0');};
+const clock=(()=>{const m=16+Math.floor((now-s.t0)/60000);return (20+Math.floor(m/60))+':'+String(m%60).padStart(2,'0');})();
+const PASS={t1:{dur:60,off:0,kind:'Hot pass'},chicken:{dur:60,off:0,kind:'Hot pass'},sole:{dur:60,off:15,kind:'Hot pass'},tartare:{dur:120,off:30,kind:'Cold pass'},cadillac:{dur:120,off:10,kind:'Drinks'}};
+const tm=(k,frozen)=>{const q=PASS[k];const left=q.dur-((now-s.t0)/1000+q.off);const fr=Math.max(0,Math.min(1,left/q.dur));return{txt:fmt(left),word:q.kind.split(' ')[0],l1:q.kind==='Drinks'?'Drinks':q.kind.split(' ')[0],l2:q.kind==='Drinks'?'':'pass',kind:q.kind,over:left<0,off:(125.66*(1-fr)).toFixed(2),col:left<15?'var(--red)':K.ink,op:frozen?.35:1};};
+const PR=[['chicken','Baby chicken','T1 · Seat 2'],['sole','Sole','T1 · Seat 1'],['tartare','Tuna tartare','T54'],['cadillac','Pink Cadillac','T1 · ×3']];
+const passRows=PR.map(([k,name,where],i)=>{const st=s.pass[k];const t=tm(k,st==='served'||st==='arjun');const base={name,where,tm:t,subD:'block',line:i<PR.length-1?'var(--s2)':'transparent'};
+if(st==='arjun')return{...base,sub:where,label:'Collecting',bg:'transparent',fg:K.ink,border:'var(--line)',tap:()=>{}};
+if(st==='served')return{...base,sub:where,label:'Served ✓',bg:'transparent',fg:K.ink,border:'var(--line)',tap:()=>{}};
+if(st==='claim')return{...base,sub:where,label:'Served',bg:K.ink,fg:K.bg,border:'transparent',tap:()=>this.withUndo('Served',x=>({pass:{...x.pass,[k]:'served'}}))};
+return{...base,sub:'',sub:where,label:'Collect',bg:K.ink,fg:K.bg,border:'transparent',tap:()=>this.withUndo("You're collecting",x=>({pass:{...x.pass,[k]:'claim'}}))};});
+const alertN=PR.filter(([k])=>!s.pass[k]).length;
+const at=TABLES.find(t=>t.id===s.orderFor);const alg=at&&at.allergy?{name:at.allergy,seat:'Seat '+at.seat.slice(1)}:null;const tabOf={floor:'floor',map:'floor',table:'floor',order:'floor',kitchen:'kitchen',alerts:'alerts'}[s.screen];
+const tabs=[['floor','Floor'],['kitchen','Kitchen'],['alerts','Alerts']].map(([k,l])=>({label:l,fg:tabOf===k?K.ink:K.mut,bar:tabOf===k?K.acc:'transparent',badge:k==='alerts'?alertN:'',bD:k==='alerts'&&alertN?'flex':'none',go:()=>this.go(k)}));
+const lab=['Drinks','Starter','Mains','Dessert'];
+const NEXT={late:['cook','Order sent · starters cooking'],order:['cook','Order sent · drinks at bar'],pass:['eating','Mains served'],bill:['seated','Bill at table']};
+const ACT={late:'Take Order',order:'Take Order',pass:'Collect',bill:'Bill'};
+const live=TABLES.map(t=>st0.done[t.id]&&NEXT[t.st]?{...t,st:NEXT[t.st][0],status:NEXT[t.st][1]}:t);
+const tables=live.filter(t=>!st0.filter||t.st===st0.filter).map(t=>{const s=S[t.st];const lm=parseInt(t.left);const urgent=s.rank<2;return{...t,allergy:t.allergy||'',seat:t.seat||'',vipD:t.vip?'inline-block':'none',alD:t.allergy?'inline-flex':'none',
+edge:t.st==='late'?s.c:'transparent',tint:s.neutral?'transparent':s.c,
+dot:s.c,pillBg:s.neutral?'var(--line)':s.c,pillFg:s.neutral?K.ink:s.fg,pillSh:s.neutral?'none':'inset 0 1px 0 rgba(255,255,255,.55),0 0 12px '+s.c,
+courses:t.c.map((v,i)=>({label:lab[i],bg:CS[v].bg,w:CS[v].w,fg:v==='n'?K.dim:K.ink})),open:()=>this.go('table'),leftFg:lm<=15?'var(--red)':K.mut,stD:t.st==='eating'?'none':'flex',hasTimer:t.st==='pass',tm:t.st==='pass'?tm('t1'):{txt:'',word:'',l1:'',l2:'',kind:'',off:0,col:K.ink,op:1},claimTxt:st0.claim[t.id]?"You're collecting":(tm('t1').over?'Overdue':'Pick up now'),hasAct:!!ACT[t.st],rowD:ACT[t.st]?'flex':'none',actLabel:t.st==='pass'&&st0.claim[t.id]?'Mark Served':(ACT[t.st]||''),act:e=>{e.stopPropagation();const cl=this.state.claim[t.id];if(t.st==='late'||t.st==='order')this.setState({screen:'order',orderFor:t.id,qty:{}});else if(t.st==='pass'&&!cl)this.withUndo("You're collecting",x=>({claim:{...x.claim,[t.id]:true}}));else this.withUndo((t.st==='pass'?'Served':'Bill sent'),x=>({done:{...x.done,[t.id]:true}}));}};}).sort((a,b)=>S[a.st].rank-S[b.st].rank);
+const summary=['late','pass','order','bill'].map(k=>{const n=live.filter(t=>t.st===k).length;const on=s.filter===k;return{label:S[k].label,c:S[k].c,numFg:n&&S[k].rank<2?S[k].c:(n?K.ink:K.mut),n,op:n||on?1:.45,bg:on?'var(--s2)':'var(--s1)',edge:on?K.ink:'transparent',tap:()=>this.setState({filter:on?null:k})};});
+const DR=['Born a Star','Pink Cadillac','Blueberry Martini','Old Fashioned'];const drinks=DR.map((n,i)=>{const q=s.qty[n]||0;return{name:n,n:q,decD:q?'block':'none',line:i<DR.length-1?'var(--s2)':'transparent',inc:()=>this.setState(x=>({qty:{...x.qty,[n]:(x.qty[n]||0)+1}})),dec:()=>this.setState(x=>({qty:{...x.qty,[n]:Math.max(0,(x.qty[n]||0)-1)}}))};});const orderN=drinks.reduce((a,d)=>a+d.n,0);
+const cc=k=>{const on=!!s.collected[k];return{label:on?'Collected ✓':'Collect',bg:on?'transparent':K.ink,fg:on?K.ink:K.bg,border:on?'var(--line)':'transparent',tap:()=>this.setState(x=>({collected:{...x.collected,[k]:!x.collected[k]}}))};};
+const legend=[{label:'Seated',c:K.ink,ls:'solid',f:'transparent'},{label:'Free',c:'var(--dim2)',ls:'dashed',f:'transparent'},{label:'Ring = time left',c:'var(--line)',ls:'solid',f:'transparent'}];
+const r=id=>{const on=!!s.ready[id];return{on,label:on?'Ready ✓':'Mark Ready',bg:on?'transparent':K.ink,fg:on?K.ink:K.bg,border:on?'var(--line)':'transparent',tap:()=>this.withUndo(on?'Ready cleared':'Marked ready',x=>({ready:{...x.ready,[id]:!x.ready[id]}}))};};
+const TH={"night":{"meta":"#e2e2e2","acc":"#D9AC75","bg":"oklch(0.16 0.006 50)","ink":"oklch(0.94 0.008 75)","line":"oklch(0.30 0.008 50)","mut":"oklch(0.70 0.012 70)","s2":"oklch(0.27 0.008 50)","s1":"oklch(0.205 0.007 50)","ink2":"oklch(0.80 0.01 70)","dim":"oklch(0.55 0.01 60)","dim2":"oklch(0.45 0.01 60)","allergy":"#D9AC75","s1b":"oklch(0.185 0.006 50)","green":"oklch(0.86 0.20 152)","red":"oklch(0.70 0.22 25)","violet":"oklch(0.76 0.17 300)","blue":"oklch(0.80 0.14 232)","pink":"oklch(0.78 0.17 350)","line2":"oklch(0.24 0.008 50)","s0":"oklch(0.13 0.005 50)","s3":"oklch(0.32 0.008 50)"},"day":{"meta":"oklch(0.40 0.01 60)","acc":"#D9AC75","bg":"oklch(0.975 0.005 80)","ink":"oklch(0.20 0.01 50)","line":"oklch(0.86 0.006 70)","mut":"oklch(0.45 0.01 60)","s2":"oklch(0.92 0.006 75)","s1":"oklch(1 0 0)","ink2":"oklch(0.32 0.01 55)","dim":"oklch(0.60 0.01 60)","dim2":"oklch(0.72 0.008 65)","allergy":"#D9AC75","s1b":"oklch(0.955 0.006 78)","green":"oklch(0.56 0.15 152)","red":"oklch(0.55 0.21 27)","violet":"oklch(0.52 0.19 300)","blue":"oklch(0.52 0.15 250)","pink":"oklch(0.56 0.20 355)","line2":"oklch(0.90 0.006 70)","s0":"oklch(0.95 0.006 78)","s3":"oklch(0.88 0.006 72)"}};const tv=TH[s.theme]||TH.night;
+const RING={T1:30,T2:80,T3:15,T4:55,T10:70,T12:60,T21:45,T23:90,T24:35,T26:65,T30:20,'40':50,'41':40,'51':75};
+const FREE=['T5','T6','T11','T22','T25','T31','T32','50'];
+let sel=null;if(s.mapSel){const id=s.mapSel,key=/^\d+$/.test(id)?'T'+id:id;const t=tables.find(x=>x.id===key);
+if(t)sel={id,name:t.name,pax:t.pax,vipD:t.vip?'inline-block':'none',status:t.status,left:t.left+' left',allergy:t.allergy||'',seat:t.seat||'',alD:t.allergy?'inline-flex':'none',courses:t.courses,crsD:'grid',cta:'Open Table',go:t.open};
+else if(FREE.includes(id))sel={id,name:'Free',pax:'',vipD:'none',status:'Ready to seat',left:'',allergy:'',seat:'',alD:'none',courses:[],crsD:'none',cta:'Seat Guests',go:()=>this.setState({mapSel:null})};
+else sel={id,name:'Walk-in',pax:'2p',vipD:'none',status:'Eating',left:Math.round((RING[id]??50)*1.2)+'m left',allergy:'',seat:'',alD:'none',courses:[{label:'Drinks',bg:CS.s.bg,w:CS.s.w,fg:K.ink},{label:'Starter',bg:CS.p.bg,w:CS.p.w,fg:K.ink},{label:'Mains',bg:CS.o.bg,w:CS.o.w,fg:K.ink},{label:'Dessert',bg:CS.n.bg,w:CS.n.w,fg:K.dim}],crsD:'grid',cta:'Open Table',go:()=>this.go('table')};}
+const doSend=()=>this.withUndo('Order sent',x=>({done:{...x.done,[x.orderFor]:x.orderFor!=='T1'?true:x.done.T1},screen:x.orderFor==='T1'?'table':'floor',qty:{},allergyAsk:false,confirmed:alg?{...x.confirmed,[x.orderFor]:clock}:x.confirmed}));
+const ago=Math.max(0,Math.floor((now-s.lastSync)/1000));const u=s.undo&&s.undo.until>now?s.undo:null;
+return{passRows,hasUndo:!!u,undoLabel:u?u.label:'',undoSec:u?Math.ceil((u.until-now)/1000):0,undoW:u?Math.max(0,(u.until-now-1000)/4000*100)+'%':'0%',doUndo:()=>this.setState(x=>x.undo?{...x.undo.snap,undo:null}:{}),
+syncHead:s.offline?'Offline':'Live',syncTxt:s.offline?'· showing '+clock+' data · retrying':'· synced '+ago+'s ago',syncEdge:s.offline?'var(--red)':'transparent',toggleSync:()=>this.setState(x=>{const n=Date.now();return{offline:!x.offline,now:n,lastSync:x.offline?n:x.lastSync};}),
+confT1:s.confirmed.T1,hasAlg:!!alg,allergyAsk:s.allergyAsk&&s.screen==='order',algTitle:alg?alg.name+' allergy · '+alg.seat:'',algBody:alg?'Confirm with the guest that nothing in this order contains '+alg.name.toLowerCase()+'. Bar and kitchen see your name and time before they start.':'',algBack:()=>this.setState({allergyAsk:false}),algConfirm:()=>doSend(),
+hasSel:!!sel,sel:sel||{courses:[]},closeSel:(e)=>{e&&e.stopPropagation();this.setState({mapSel:null});},pickTable:(e)=>{let el=e.target;for(let i=0;i<3&&el;i++){const tx=(el.textContent||'').trim();if(/^(T\d+|\d{2})$/.test(tx)&&el.children.length===0){this.setState({mapSel:tx});return;}el=el.parentElement;}},themeVars:Object.entries(tv).map(([k,v])=>'--'+k+':'+v).join(';')+';background:var(--bg);color:var(--ink)',themeDay:s.theme==='day',themeNight:s.theme!=='day',toggleTheme:()=>this.setState(x=>({theme:x.theme==='day'?'night':'day'})),tabs,tables,summary,legend,drinks,c1:cc('sole'),c2:cc('chicken'),orderFor:s.orderFor,filterLine:s.filter?S[s.filter].label:'Tables',clearD:s.filter?'block':'none',clearFilter:()=>this.setState({filter:null}),sendLabel:orderN?'Send':'Add Items',sendBg:orderN?K.ink:'var(--s2)',sendFg:orderN?K.bg:K.mut,sendOrder:()=>{if(!orderN)return;if(alg){this.setState({allergyAsk:true});return;}doSend();},cancelOrder:()=>this.setState(x=>({screen:x.orderFor==='T1'?'table':'floor',qty:{}})),isFloor:s.screen==='floor',isMap:s.screen==='map',isTable:s.screen==='table',isOrder:s.screen==='order',isKitchen:s.screen==='kitchen',isAlerts:s.screen==='alerts',
+isEast:s.zone==='East',isWest:s.zone==='West',goEast:()=>this.setState({zone:'East'}),goWest:()=>this.setState({zone:'West'}),
+eastBg:s.zone==='East'?'var(--s3)':'transparent',eastFg:s.zone==='East'?K.ink:K.mut,westBg:s.zone==='West'?'var(--s3)':'transparent',westFg:s.zone==='West'?K.ink:K.mut,
+goMap:()=>this.go('map'),goList:()=>this.go('floor'),goTable:()=>this.go('table'),goOrder:()=>this.setState({screen:'order',orderFor:'T1'}),goAlerts:()=>this.go('alerts'),goKitchen:()=>this.go('kitchen'),
+r1:r('t1'),r12:r('t12'),r54:r('t54')};}}
+</script>
+
+
+</body></html>

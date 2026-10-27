@@ -1,0 +1,59 @@
+/* Editorial motion: native scrolling, original product screens. */
+html{scroll-behavior:smooth!important;scroll-padding-top:28px}
+.reading-progress{position:fixed;inset:0 auto auto 0;height:2px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;z-index:100;pointer-events:none;mix-blend-mode:difference;color:white}
+.motion-ready .motion-enter{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.motion-ready .motion-enter.is-visible{opacity:1;transform:none}
+.motion-label{display:inline-grid;overflow:hidden;vertical-align:middle;line-height:1.35}
+.motion-label>span{grid-area:1/1;transition:transform .45s cubic-bezier(.22,.68,.2,1)}
+.motion-label>span+span{transform:translateY(110%)}
+a:hover .motion-label>span:first-child,a:focus-visible .motion-label>span:first-child{transform:translateY(-110%)}
+a:hover .motion-label>span+span,a:focus-visible .motion-label>span+span{transform:translateY(0)}
+.component-action,.process-tabs button,.review-tabs button,.comparison-picker button,.screen-gallery-options button{transition:background-color .25s,color .25s,border-color .25s,box-shadow .25s,translate .3s}
+.component-action:hover,.comparison-picker button:hover,.screen-gallery-options button:hover{translate:0 -2px}
+.glimpse-media{overflow:hidden}
+.glimpse-media img,.glimpse-media video{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.glimpse-media:hover img,.glimpse-media:hover video{transform:scale(1.025)}
+.screen-gallery-layout .screen-capture{animation:screen-arrival .5s ease both}
+@keyframes screen-arrival{from{opacity:.45;translate:0 12px}to{opacity:1;translate:0 0}}
+@media(min-width:1050px) and (min-height:850px){.full-screen-insights .screen-explainer{position:sticky;top:30px}.full-screen-insights .screen-explainer:nth-child(2){top:48px}.full-screen-insights .screen-explainer:nth-child(3){top:66px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.motion-ready .motion-enter{opacity:1;transform:none;transition:none}.motion-label>span{transition:none}.motion-label>span+span{display:none}a:hover .motion-label>span:first-child,a:focus-visible .motion-label>span:first-child{transform:none}.full-screen-insights .screen-explainer{position:relative;top:auto}.screen-gallery-layout .screen-capture{animation:none}}
+/* Focused comparison and operational layout refinements. */
+.prototype-toolbar:has(#prototype-task-name:empty){display:none}
+.prototype-toolbar:empty{display:none}
+.comparison-viewer{width:100%!important;max-width:none!important;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:64px;align-items:start;padding:32px!important}
+.comparison-copy{padding-top:24px;max-width:480px}
+.comparison-reason{font-size:24px!important;line-height:1.4!important;text-align:left!important;margin:0 0 28px!important}
+.comparison-mode-controls{display:grid!important;grid-template-columns:1fr 1fr;gap:12px!important;margin:0!important}
+.comparison-mode-controls button{width:100%;min-height:52px;font-weight:700}
+.comparison-viewer .screen-reveal{width:100%!important;max-width:360px!important;margin:0!important}
+.author-row{display:flex!important;flex-direction:column;align-items:flex-start!important;gap:24px!important}
+.author-service-photo{display:block;width:min(100%,280px)!important;height:auto!important;aspect-ratio:480/620;object-fit:cover;border-radius:8px!important;filter:none!important;box-shadow:0 16px 40px #0003}
+@media(max-width:760px){.comparison-viewer{grid-template-columns:1fr;gap:28px;padding:20px!important}.comparison-copy{padding:0;max-width:none}.comparison-viewer .screen-reveal{justify-self:center}.comparison-reason{font-size:21px!important}}
+#prototype .prototype-toolbar{display:none!important}
+#gallery-screen-panel .gallery-focused-screen{display:flex;flex-direction:column;align-items:center;gap:24px}
+#gallery-screen-panel .gallery-focused-screen figcaption{order:-1;margin:0;text-align:left;width:100%;max-width:360px}
+.service-flow-shell,.service-flow-shell iframe{background:#080808!important}
+.service-flow-shell{border-color:#444}
+.service-flow-shell iframe{height:828px}
+/* Full viewport opening with a stable bottom chapter rail. */
+.case-hero{min-height:100svh!important;display:flex;flex-direction:column;padding-top:32px}
+.case-hero>.hero-top{flex:none}
+.case-hero>.hero-title{flex:1;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,5vh,56px);margin-top:0;padding-block:44px}
+.case-hero .hero-statement{margin-top:0}
+.case-hero>.hero-bottom{flex:none;margin-top:0;margin-bottom:20px}
+.case-hero>.chapter-index{flex:none;margin-top:0}
+@media(max-width:650px){.case-hero{padding-top:24px}.case-hero>.hero-title{padding-block:48px;gap:32px}.case-hero>.hero-bottom{margin-bottom:20px}.case-hero>.chapter-index{margin-top:0}}
+.process-tabs button small{font-weight:500!important}
+.screen-gallery-sidebar{min-width:0}
+#gallery-screen-caption{padding-top:28px;max-width:400px}
+#gallery-screen-caption strong{display:block;font-weight:600;margin-bottom:10px}
+#gallery-screen-caption p{font-weight:400;line-height:1.5;color:inherit;opacity:.85}
+.comparison-viewer{max-width:1000px!important;margin-inline:auto!important;grid-template-columns:minmax(260px,400px) minmax(280px,340px);justify-content:center;gap:48px;align-items:center;padding:24px!important}
+.comparison-copy{padding:0;max-width:none}
+.comparison-copy .comparison-picker{margin:0 0 28px!important;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comparison-copy .comparison-picker button{min-width:0;width:100%;padding-inline:12px}
+.comparison-viewer .screen-reveal{max-width:340px!important}
+@media(max-width:760px){.comparison-viewer{grid-template-columns:1fr;gap:28px;padding:0!important}.comparison-copy{max-width:440px;width:100%;justify-self:center}}
+.closing-portrait{grid-column:1/-1;display:flex;justify-content:center;margin-top:40px}
+.closing-portrait img{display:block;width:min(100%,480px);height:auto;object-fit:contain;border-radius:12px;box-shadow:0 24px 60px #0005;filter:none!important}
+@media(max-width:650px){.closing-portrait{margin-top:28px}.closing-portrait img{max-width:400px}}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fine Dine — Service flow comparison</title><script src="../prototype/resources/8705780f-7f00-4105-9529-3e3d13eaabea.js"></script><script src="../prototype/resources/366a8833-2142-4528-80a5-9f78a478774e.js"></script><script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="stylesheet" href="../assets/fonts.css">
+
+
+<style>
+html,body{margin:0;background:oklch(0.16 0.006 50)}*{box-sizing:border-box}button{font-family:inherit;cursor:pointer}
+a{color:#D9AC75}a:hover{color:#E2E2E2}
+@keyframes wave{0%{transform:translate(-50%,-50%) scale(.3);opacity:.6}100%{transform:translate(-50%,-50%) scale(3.2);opacity:0}}
+@keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.08)}}
+@keyframes dash{to{stroke-dashoffset:-40}}
+@keyframes steam{0%{transform:translateY(0);opacity:0}40%{opacity:.9}100%{transform:translateY(-14px);opacity:0}}
+@keyframes drain{from{stroke-dashoffset:0}to{stroke-dashoffset:88}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+</style>
+<style>.service-flow-layout{height:780px!important;min-height:0;align-items:start;grid-template-columns:minmax(0,1fr) minmax(300px,360px)!important;gap:28px!important}.service-flow-map-column{align-self:center}.service-flow-controls{max-height:732px!important;gap:14px!important}.service-flow-controls>div:first-child button{font-size:12px!important;height:48px!important;padding:0 8px}.service-flow-controls button{cursor:pointer}.service-flow-controls button span{overflow-wrap:normal}.service-flow-controls button[aria-label="Previous step"]{font-size:13px!important}button:focus-visible{outline:2px solid #83649a;outline-offset:3px}.flow-paused *{animation-play-state:paused!important}@media(max-width:1000px){.service-flow-layout{height:auto!important;grid-template-columns:1fr!important;padding:16px!important;gap:24px!important}.service-flow-controls{max-height:none!important;overflow:visible!important}.service-flow-controls>div:first-child button{font-size:12px!important}.service-flow-map-column [data-plan-box]{width:100%!important}.service-flow-map-column>div:last-child{width:100%!important}.service-flow-map-column>div:last-child>div{padding:12px!important}.service-flow-map-column>div:last-child>div>span:first-child{font-size:11px!important}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}</style><style>html,body{background:#080808!important}.service-flow-layout{height:auto!important;min-height:780px;padding:24px!important;gap:24px!important;align-items:center!important}.service-flow-map-column{gap:16px!important}.service-flow-controls{gap:16px!important;max-height:none!important;overflow:visible!important;align-self:stretch;justify-content:center}.service-flow-controls>div:first-child{background:#171717!important;border-color:#383838!important}.service-flow-controls>div:first-child>span{display:none}.flow-mode{color:#aaa!important;border-radius:999px!important}.flow-mode[aria-pressed=true]{background:#f2f2f2!important;color:#111!important}.flow-step{background:transparent!important;border:1px solid transparent!important;border-radius:14px!important;padding:14px!important}.flow-step:hover{background:#181818!important}.flow-step.is-active{background:#202020!important;border-color:#454545!important}.flow-step>span{color:#aaa!important}.flow-step.is-active>span{color:#fff!important}.flow-step span span{color:#c0c0c0!important}.flow-step span[style*="border:1px"]{border-color:#555!important;color:#ddd!important}.service-flow-controls>div:last-child button{background:#1c1c1c!important;color:#eee!important;border:1px solid #444!important}.service-flow-controls>div:last-child button:last-child{background:#eee!important;color:#111!important}@media(max-width:1000px){.service-flow-layout{min-height:0;padding:16px!important;gap:24px!important}}</style><style>.service-flow-layout{align-items:start!important;min-height:800px!important}.service-flow-map-column{align-self:start!important}.service-flow-controls{display:grid!important;grid-template-rows:60px 2px 316px 140px 56px;gap:16px!important;align-content:start!important;justify-content:stretch!important}.service-flow-controls>div:nth-child(3){height:316px;display:grid!important;grid-template-rows:repeat(5,60px);gap:4px!important}.flow-step{height:60px!important;align-items:center;grid-template-rows:1fr!important;padding:10px 14px!important}.flow-step>span:first-child{padding-top:0!important}.flow-step>span:nth-child(3){display:none!important}.flow-selected-detail{height:140px;padding:20px;border:1px solid #343434;border-radius:14px;background:#131313;color:#ddd;font-size:15px;line-height:1.6;overflow:auto}.service-flow-controls>div:last-child{margin-top:0!important}.service-flow-controls>div:nth-child(2){background:#242424!important}.flow-step:not(.is-active)>span{color:#858585!important}.flow-step.is-active{background:#292929!important;border-color:#888!important;box-shadow:inset 3px 0 #eee}.service-flow-layout~div{opacity:0}.service-flow-layout:before{display:none}[data-plan-box]>div{background:#101010!important;border-color:#252525!important}.service-flow-map-column>div:last-child>div{background:#111!important;border-color:#252525!important}.service-flow-layout{background:#080808}.service-flow-controls .flow-mode:focus-visible,.service-flow-controls .flow-step:focus-visible{outline:2px solid white;outline-offset:2px}@media(max-width:1000px){.service-flow-layout{min-height:0!important}.service-flow-controls{grid-template-rows:60px 2px 316px 140px 56px!important}}</style><style>.service-flow-controls{grid-template-rows:68px 2px 312px 140px 56px!important}.service-flow-controls>div:first-child button,.service-flow-controls .flow-step,.service-flow-controls>div:last-child button{height:56px!important;min-height:56px!important;font-size:14px!important;line-height:20px!important;font-weight:600!important}.flow-step>span{font-size:14px!important;line-height:20px!important;font-weight:600!important}.service-flow-controls>div:nth-child(3){height:312px!important;grid-template-rows:repeat(5,56px)!important;gap:8px!important}.flow-mode{gap:6px!important}.service-flow-controls>div:last-child button{padding-inline:12px!important}@media(max-width:1000px){.service-flow-controls{grid-template-rows:68px 2px 312px 140px 56px!important}}</style><style>.service-flow-controls>div:first-child{padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;gap:12px!important;align-items:center}.service-flow-controls>div:first-child .flow-mode{border:1px solid #555!important;border-radius:12px!important;background:#181818!important;color:#ccc!important;width:100%;padding:0 10px!important}.service-flow-controls>div:first-child .flow-mode[aria-pressed=true]{background:#f2f2f2!important;color:#111!important;border-color:#f2f2f2!important}</style><style>.service-flow-layout{min-height:0!important;height:auto!important;grid-template-columns:minmax(0,1fr) 340px!important;align-items:start!important}.service-flow-map-column [data-plan-box],.service-flow-map-column>div:last-child{width:100%!important}.service-flow-map-column>div:last-child{gap:12px!important}.service-flow-map-column>div:last-child>div{min-width:0;padding:14px!important}.service-flow-map-column>div:last-child>div>span:last-child{font-size:32px!important}@media(max-width:1000px){.service-flow-layout{grid-template-columns:1fr!important}.service-flow-controls{width:100%;max-width:none}.service-flow-map-column{width:100%}.service-flow-controls>div:first-child button{white-space:normal}}</style></helmet>
+<div style="position:relative;min-height:100vh;overflow:hidden;background:#080808;color:#f4f4f4;font-family:'Figtree',sans-serif">
+  <div style="position:absolute;inset:-20% -10% auto -10%;height:900px;pointer-events:none;background:radial-gradient(closest-side,oklch(0.70 0.22 25 / .07),transparent);opacity:{{ glowRed }};transition:opacity 1.2s ease"></div>
+  <div style="position:absolute;inset:-20% -10% auto -10%;height:900px;pointer-events:none;background:radial-gradient(closest-side,oklch(0.80 0.10 75 / .12),transparent);opacity:{{ glowGold }};transition:opacity 1.2s ease"></div>
+
+  <div class="service-flow-layout" style="position:relative;height:100vh;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,400px);gap:24px">
+    
+
+    <div style="display:contents">
+      <div class="service-flow-map-column" style="min-width:0;min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px">
+        <div data-plan-box="1" style="position:relative;flex:none;width:min(100%,calc((100vh - 172px) * 10 / 7));aspect-ratio:1000/700"><div style="position:absolute;left:0;top:0;width:1000px;height:700px;transform:scale({{ planScale }});transform-origin:0 0;color:oklch(0.94 0.008 75);container-type:inline-size;border-radius:24px;background:oklch(0.185 0.006 50);border:1px solid oklch(0.30 0.008 50);overflow:hidden">
+          <div style="position:absolute;left:3%;right:22%;top:0;height:4px;background:repeating-linear-gradient(90deg,oklch(0.55 0.01 60) 0 60px,transparent 60px 70px);opacity:.6"></div>
+          <span style="position:absolute;left:3%;top:2.4%;font-size:12px;color:oklch(0.55 0.01 60)">Windows · London skyline</span>
+          <div style="position:absolute;left:81%;top:0;right:0;bottom:0;background:oklch(0.205 0.007 50)"></div>
+          <span style="position:absolute;left:81%;right:0;top:4%;text-align:center;font-size:13px;font-weight:600;color:#E2E2E2">Kitchen</span>
+          <div style="position:absolute;left:77%;top:34%;width:2.5%;height:35%;border-radius:6px;background:oklch(0.30 0.008 50)"></div>
+          <span style="position:absolute;left:78.25%;top:29%;transform:translateX(-50%);font-size:13px;font-weight:600">Pass</span>
+          <div style="position:absolute;left:4%;top:89%;width:15%;height:6%;border-radius:8px;border:1px solid oklch(0.30 0.008 50);display:flex;align-items:center;justify-content:center;white-space:nowrap;font-size:clamp(9px,1.2cqw,12px);color:#E2E2E2">Host stand</div>
+          <sc-for list="{{ tables }}" as="tb" hint-placeholder-count="7">
+            <div style="position:absolute;left:{{ tb.l }};top:{{ tb.t }};width:8.4%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px solid oklch(0.30 0.008 50);display:flex;align-items:center;justify-content:center;font-size:12px;color:oklch(0.55 0.01 60);opacity:{{ tb.o }};transition:opacity .6s">{{ tb.id }}<span style="position:absolute;left:-30%;top:50%;width:22%;aspect-ratio:1;border-radius:50%;background:oklch(0.45 0.01 60);transform:translateY(-50%)"></span><span style="position:absolute;right:-30%;top:50%;width:22%;aspect-ratio:1;border-radius:50%;background:oklch(0.45 0.01 60);transform:translateY(-50%)"></span></div>
+          </sc-for>
+          <div style="position:absolute;left:15%;top:25.7%;width:9.4%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1.5px solid oklch(0.94 0.008 75);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700">T1</div>
+          <div style="position:absolute;left:15%;top:25.7%;width:24%;aspect-ratio:1;border-radius:50%;border:2px dashed oklch(0.70 0.22 25);opacity:{{ aloneO }};transition:opacity .6s;animation:pulse 1.6s ease-in-out infinite;transform:translate(-50%,-50%)"></div>
+          <sc-for list="{{ seats }}" as="st" hint-placeholder-count="3">
+            <div style="position:absolute;left:{{ st.l }};top:{{ st.t }};width:3.2%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:#E2E2E2;box-shadow:0 0 0 {{ st.ringW }} {{ st.ringC }};transition:box-shadow .5s">
+              <span style="position:absolute;left:50%;bottom:150%;transform:translateX(-50%) scale({{ st.qS }});transform-origin:bottom center;transition:transform .45s cubic-bezier(.34,1.56,.64,1);width:24px;height:24px;border-radius:12px;background:oklch(0.16 0.006 50);border:1.5px solid oklch(0.94 0.008 75);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">?</span>
+            </div>
+          </sc-for>
+          <div style="position:absolute;left:23%;top:36%;display:flex;align-items:center;gap:6px;height:clamp(20px,2.6cqw,26px);padding:0 clamp(6px,1cqw,10px);border-radius:13px;border:1px solid #D9AC75;font-size:clamp(9px,1.2cqw,12px);font-weight:600;white-space:nowrap;background:oklch(0.16 0.006 50)">Nut · Seat 3</div>
+          <svg viewBox="0 0 1000 700" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+            <defs><mask id="spotMask"><rect width="1000" height="700" fill="white"></rect><ellipse cx="195" cy="195" rx="195" ry="150" fill="black"></ellipse><ellipse cx="770" cy="345" rx="160" ry="180" fill="black"></ellipse></mask></defs>
+            <rect width="1000" height="700" fill="oklch(0.12 0.005 50)" mask="url(#spotMask)" style="opacity:{{ spotO }};transition:opacity .8s ease"></rect>
+            <line x1="782" y1="360" x2="{{ sigW.x }}" y2="{{ sigW.y }}" stroke="#D9AC75" stroke-width="2.5" stroke-dasharray="10 10" style="opacity:{{ sigO }};transition:opacity .6s;animation:dash .8s linear infinite"></line>
+            <line x1="782" y1="360" x2="{{ sigM.x }}" y2="{{ sigM.y }}" stroke="#D9AC75" stroke-width="2.5" stroke-dasharray="10 10" style="opacity:{{ sigO }};transition:opacity .6s;animation:dash .8s linear infinite"></line>
+          </svg>
+          <sc-for list="{{ waves }}" as="wv" hint-placeholder-count="3">
+            <span style="position:absolute;left:{{ wv.l }};top:{{ wv.t }};width:9%;aspect-ratio:1;border-radius:50%;border:1.5px solid oklch(0.94 0.008 75);opacity:0;animation:wave 2.4s ease-out infinite;animation-delay:{{ wv.d }};display:{{ wv.show }};pointer-events:none"></span>
+          </sc-for>
+          <div style="position:absolute;left:{{ plate.l }};top:{{ plate.t }};width:4%;aspect-ratio:1;transform:translate(-50%,-50%) scale({{ plate.s }});border-radius:50%;background:oklch(0.16 0.006 50);border:2px solid oklch(0.94 0.008 75);transition:left .9s cubic-bezier(.22,1,.36,1),top .9s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.34,1.56,.64,1),box-shadow .6s;box-shadow:0 0 0 {{ plate.ringW }} {{ plate.ringC }}">
+            <span style="position:absolute;inset:24%;border-radius:50%;background:#E2E2E2"></span>
+            <span style="position:absolute;right:-20%;top:-20%;width:34%;aspect-ratio:1;border-radius:50%;background:#D9AC75"></span>
+            <span style="position:absolute;left:20%;bottom:110%;width:2px;height:12px;border-radius:1px;background:#D9AC75;opacity:{{ plate.steam }};animation:steam 1.4s ease-in infinite"></span>
+            <span style="position:absolute;left:48%;bottom:110%;width:2px;height:12px;border-radius:1px;background:#D9AC75;opacity:{{ plate.steam }};animation:steam 1.4s ease-in infinite .4s"></span>
+            <span style="position:absolute;left:76%;bottom:110%;width:2px;height:12px;border-radius:1px;background:#D9AC75;opacity:{{ plate.steam }};animation:steam 1.4s ease-in infinite .8s"></span>
+          </div>
+          <sc-for list="{{ newGuests }}" as="ng" hint-placeholder-count="2">
+            <span style="position:absolute;left:{{ ng.l }};top:{{ ng.t }};width:2.6%;aspect-ratio:1;border-radius:50%;background:#E2E2E2;transform:translate(-50%,-50%);opacity:{{ ng.o }};transition:left 1s cubic-bezier(.22,1,.36,1),top 1s cubic-bezier(.22,1,.36,1),opacity .6s"></span>
+          </sc-for>
+          <sc-for list="{{ people }}" as="pp" hint-placeholder-count="3">
+            <div style="position:absolute;left:{{ pp.l }};top:{{ pp.t }};transform:translate(-50%,-50%);transition:left .95s cubic-bezier(.22,1,.36,1),top .95s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;align-items:center;gap:clamp(2px,.6cqw,6px);z-index:3">
+              <span style="position:relative;width:clamp(28px,4.4cqw,44px);height:clamp(28px,4.4cqw,44px);border-radius:50%;background:oklch(0.94 0.008 75);color:oklch(0.16 0.006 50);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 {{ pp.glowW }} {{ pp.glowC }},0 8px 24px rgba(0,0,0,.45);transition:box-shadow .6s"><sc-if value="{{ pp.isW }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:55%;height:55%"><path d="M3 7.5 L10.5 11 V13 L3 16.5 Z M21 7.5 L13.5 11 V13 L21 16.5 Z" fill="oklch(0.16 0.006 50)"></path><rect x="10" y="10" width="4" height="4" rx="1" fill="oklch(0.16 0.006 50)"></rect></svg></sc-if><sc-if value="{{ pp.isC }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:55%;height:55%" fill="none" stroke="oklch(0.16 0.006 50)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M7.5 10.5 A3 3 0 0 1 8.2 4.8 A3.9 3.9 0 0 1 15.8 4.8 A3 3 0 0 1 16.5 10.5 V12.5 H7.5 Z"></path><path d="M8.5 14.5 H15.5 V21 H8.5 Z" fill="oklch(0.16 0.006 50)"></path><path d="M8.5 15.5 L5.5 17 M15.5 15.5 L18.5 17"></path></svg></sc-if><sc-if value="{{ pp.isM }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:55%;height:55%" fill="none" stroke="oklch(0.16 0.006 50)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 21 L5 9.5 L9 6.5 L12 12 L15 6.5 L19 9.5 L20.5 21"></path><path d="M9 6.5 L9.5 4 H14.5 L15 6.5"></path><path d="M10.8 7.2 H13.2 L12.6 9.3 L13.8 17 L12 19 L10.2 17 L11.4 9.3 Z" fill="oklch(0.16 0.006 50)" stroke-width="1"></path></svg></sc-if><span style="position:absolute;left:{{ pp.qx }};top:{{ pp.qy }};transform:scale({{ pp.qS }});transition:transform .45s cubic-bezier(.34,1.56,.64,1);width:24px;height:24px;border-radius:12px;background:oklch(0.16 0.006 50);color:oklch(0.94 0.008 75);border:1.5px solid oklch(0.94 0.008 75);font-size:13px;display:flex;align-items:center;justify-content:center">?</span></span>
+              <span style="font-size:clamp(9px,1.2cqw,12px);font-weight:500;color:#E2E2E2;white-space:nowrap">{{ pp.label }}</span>
+            </div>
+          </sc-for>
+          <sc-for list="{{ phones }}" as="ph" hint-placeholder-count="2">
+            <div style="position:absolute;left:{{ ph.l }};top:{{ ph.t }};z-index:4;display:flex;align-items:center;gap:10px;padding:10px 14px 10px 10px;border-radius:14px;background:oklch(0.205 0.007 50);border:1px solid #D9AC75;box-shadow:0 12px 32px rgba(0,0,0,.5),0 0 24px oklch(0.80 0.10 75 / .18);opacity:{{ ph.o }};transform:translateY({{ ph.y }});transition:opacity .5s,transform .6s cubic-bezier(.22,1,.36,1),left .95s cubic-bezier(.22,1,.36,1),top .95s cubic-bezier(.22,1,.36,1);pointer-events:none;white-space:nowrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" style="flex:none;transform:rotate(-90deg)"><circle cx="16" cy="16" r="14" fill="none" stroke="oklch(0.30 0.008 50)" stroke-width="2.5"></circle><circle cx="16" cy="16" r="14" fill="none" stroke="#D9AC75" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="88" style="animation:drain 12s linear infinite;display:{{ ph.ringD }}"></circle><circle cx="16" cy="16" r="5" fill="#D9AC75" style="display:{{ ph.dotD }}"></circle></svg>
+              <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;font-weight:600">{{ ph.title }}</span><span style="font-size:12px;color:#E2E2E2">{{ ph.sub }}</span></span>
+            </div>
+          </sc-for>
+          <div style="position:absolute;left:{{ bub.l }};top:{{ bub.t }};z-index:5;transform:translate({{ bub.tx }},-100%) translateY({{ bub.y }});opacity:{{ bub.o }};transition:opacity .45s,transform .6s cubic-bezier(.22,1,.36,1),left .9s cubic-bezier(.22,1,.36,1),top .9s cubic-bezier(.22,1,.36,1);max-width:30cqw;padding:clamp(8px,1.2cqw,12px) clamp(10px,1.6cqw,16px);border-radius:16px;background:oklch(0.94 0.008 75);color:oklch(0.16 0.006 50);box-shadow:0 16px 40px rgba(0,0,0,.5);pointer-events:none;display:flex;flex-direction:column;gap:4px">
+            <span style="font-size:clamp(9px,1.1cqw,11px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.6">{{ bub.who }}</span>
+            <span style="font-size:clamp(11px,1.5cqw,15px);line-height:1.4;font-style:italic;font-weight:500">{{ bub.text }}</span>
+          </div>
+        </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:min(100%,calc((100vh - 172px) * 10 / 7))">
+          <sc-for list="{{ counters }}" as="ct" hint-placeholder-count="3">
+            <div style="border-radius:18px;background:oklch(0.205 0.007 50);color:oklch(0.94 0.008 75);border:1px solid {{ ct.edge }};padding:12px 14px;display:flex;flex-direction:column;gap:8px;transition:border-color .6s,box-shadow .6s;box-shadow:{{ ct.glow }}">
+              <span style="font-size:13px;color:#E2E2E2">{{ ct.label }}</span>
+              <span style="font-family:'Cabin',sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,44px);line-height:1;font-variant-numeric:tabular-nums">{{ ct.value }}</span>
+            </div>
+          </sc-for>
+        </div>
+        
+      </div>
+
+      <aside class="service-flow-controls" style="min-width:0;min-height:0;max-height:calc(100vh - 48px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:20px"><div style="position:relative;display:grid;grid-template-columns:1fr 1fr;padding:6px;border-radius:999px;background:oklch(0.95 0.004 70);border:1px solid oklch(0.88 0.005 60);width:100%">
+        <span style="position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 6px);border-radius:999px;background:oklch(0.16 0.006 50);transform:translateX({{ pillX }});transition:transform .6s cubic-bezier(.22,1,.36,1)"></span>
+        <button class="flow-mode" aria-pressed="{{ withoutSelected }}" onClick="{{ pickWithout }}" style="position:relative;height:52px;border:0;background:none;border-radius:999px;font-size:14px;font-weight:600;color:{{ tabAFg }};transition:color .4s;display:flex;align-items:center;justify-content:center;gap:8px">Without a shared view</button>
+        <button class="flow-mode" aria-pressed="{{ withSelected }}" onClick="{{ pickWith }}" style="position:relative;height:52px;border:0;background:none;border-radius:999px;font-size:14px;font-weight:600;color:{{ tabBFg }};transition:color .4s;display:flex;align-items:center;justify-content:center;gap:8px">With the service app</button>
+      </div>
+        
+        <div style="height:2px;border-radius:1px;background:oklch(0.88 0.005 60);overflow:hidden"><div style="height:2px;width:{{ progW }};background:{{ accent }};transition:width .7s cubic-bezier(.22,1,.36,1),background .6s"></div></div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <sc-for list="{{ steps }}" as="sp" hint-placeholder-count="5">
+            <button class="flow-step {{ sp.cardClass }}" onClick="{{ sp.go }}" style="text-align:left;border:0;border-radius:18px;padding:12px 14px;background:{{ sp.bg }};color:oklch(0.16 0.006 50);display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px 12px;transition:background .5s" style-hover="background:oklch(0.95 0.004 70)">
+              <span style="font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;color:{{ sp.numC }};padding-top:6px;transition:color .4s">{{ sp.num }}</span>
+              <span style="font-family:'Cabin',sans-serif;font-size:18px;line-height:25px;font-weight:{{ sp.w }};color:{{ sp.titleC }};transition:color .4s">{{ sp.title }}</span>
+              <span style="grid-column:2;display:grid;grid-template-rows:{{ sp.rows }};transition:grid-template-rows .55s cubic-bezier(.22,1,.36,1)"><span style="overflow:hidden;display:flex;flex-direction:column;gap:12px"><span style="font-size:15px;line-height:23px;color:oklch(0.42 0.01 60);padding-top:4px">{{ sp.desc }}</span><span style="display:flex;flex-wrap:wrap;gap:6px;padding-bottom:2px"><sc-for list="{{ sp.roles }}" as="rl" hint-placeholder-count="2"><span style="height:26px;padding:0 10px;border-radius:13px;border:1px solid oklch(0.88 0.005 60);font-size:12px;font-weight:600;display:flex;align-items:center">{{ rl }}</span></sc-for></span></span></span>
+            </button>
+          </sc-for>
+        </div>
+        <div class="flow-selected-detail" role="status" aria-live="polite">{{ activeDescription }}</div><div style="display:grid;grid-template-columns:64px 1fr;gap:8px;margin-top:8px">
+          <button onClick="{{ prev }}" aria-label="Previous step" style="height:56px;border-radius:16px;border:1px solid oklch(0.88 0.005 60);background:none;color:oklch(0.16 0.006 50);font-size:20px;opacity:{{ prevO }};transition:opacity .3s,background .3s" style-hover="background:oklch(0.95 0.004 70)">Back</button>
+          <button onClick="{{ next }}" style="height:56px;border-radius:16px;border:0;background:oklch(0.16 0.006 50);color:#FFFFFF;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:space-between;padding:0 20px;transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s" style-hover="transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.18)"><span>{{ nextLabel }}</span></button>
+        </div>
+        
+      </aside>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const P={W:{home:[240,120],t4:[240,400],pass:[730,315],seat:[255,322]},C:{home:[900,300],pass:[835,360]},M:{home:[360,600],pass:[730,425]}};
+const PASS=[782,360],SEAT3=[205,215];
+const RED='oklch(0.70 0.22 25)',GOLD='#D9AC75',GREEN='oklch(0.86 0.20 152)',INK='oklch(0.94 0.008 75)',LINE='oklch(0.30 0.008 50)';
+const F={
+without:{eyebrow:'FLOW 01 · WITHOUT A SHARED VIEW',accent:RED,steps:[
+{t:'Table 1 is seated',d:'Malti Kale, party of three. The nut allergy on seat 3 lives on a paper ticket.',r:['Waiter','Guests'],W:'home',C:'home',M:'home',plate:'none',bub:['Waiter','W','Nut allergy, seat 3. I’ll write it down.'],at:[450,335],tx:'0%',sec:null,staff:2,un:'—'},
+{t:'Mains land on the pass',d:'The chef calls for Table 1 but can’t tell which plate is the nut-free one. The waiter is busy at T4 and doesn’t hear.',r:['Chef'],W:'t4',C:'pass',M:'home',plate:'hot',waves:1,qC:1,bub:['Chef','C','Service, Table 1! Which one’s nut-free?'],sec:20,staff:2,un:'—'},
+{t:'The waiter leaves the floor',d:'With no live status, the waiter walks to the pass to check the ticket in person.',r:['Waiter','Chef'],W:'pass',C:'pass',M:'home',plate:'hot',qW:1,qC:1,bub:['Waiter','W','It’s on the ticket somewhere. Seat 3, I think?'],at:[700,335],tx:'-100%',sec:160,staff:1,un:'2 min'},
+{t:'The manager follows',d:'Three people now stand at the pass, working on the same question.',r:['Waiter','Chef','Manager'],W:'pass',C:'pass',M:'pass',plate:'hot',qW:1,qC:1,qM:1,bub:['Manager','M','Check the booking notes. Nobody serves until we’re sure.'],at:[700,335],tx:'-100%',sec:270,staff:0,un:'4 min'},
+{t:'Table 1 is alone',d:'Nobody is on the floor. The guests look for help while their food cools under the lamps.',r:['Guests'],W:'pass',C:'pass',M:'pass',plate:'cold',qW:1,qC:1,qM:1,guestsQ:1,spot:1,alone:1,bub:['Guest','G','Has anyone seen our waiter?'],sec:380,staff:0,un:'6 min'}]},
+with:{eyebrow:'FLOW 02 · WITH THE SERVICE APP',accent:GOLD,steps:[
+{t:'Table 1 is seated',d:'The allergy is tagged to seat 3 when the order is taken, and it follows the order to every screen.',r:['Waiter','Guests'],W:'home',C:'home',M:'home',plate:'none',bub:['Waiter','W','Seat 3, nut allergy. It’s on the order.'],at:[450,335],tx:'0%',sec:null,staff:2,un:'—'},
+{t:'Mains land on the pass',d:'The chef sees the seat 3 tag on the ticket, plates the nut-free lamb and confirms it with one tap.',r:['Chef'],W:'t4',C:'pass',M:'home',plate:'hot',glowC:1,bub:['Chef','C','Seat 3 nut-free. Confirmed.'],sec:10,staff:2,un:'—'},
+{t:'Everyone sees it at once',d:'The waiter and the manager get the update on their phones, where they stand. Nobody walks to the kitchen.',r:['Waiter','Manager'],W:'home',C:'pass',M:'home',plate:'hot',sig:1,phW:1,phM:1,glowW:1,glowM:1,bub:['Waiter','W','Your mains are on their way.'],at:[340,345],tx:'0%',sec:30,staff:2,un:'0 min'},
+{t:'One person collects',d:'The waiter collects inside the one-minute hot pass. The manager stays out front to greet new guests.',r:['Waiter','Manager'],W:'pass',C:'pass',M:'home',plate:'carry',phW:1,ring:1,newG:1,bub:['Manager','M','Good evening, welcome to Oblix.'],at:[520,690],tx:'0%',sec:58,staff:2,un:'0 min'},
+{t:'Seat 3 is served first',d:'The food arrives hot, the allergy is handled, and the floor is never left empty.',r:['Waiter','Guests'],W:'seat',C:'pass',M:'home',plate:'served',newG:1,bub:['Guest','G','That was quick. Thank you.'],sec:'Served',staff:2,un:'0 min'}]}};
+const pct=(x,y)=>({l:(x/10)+'%',t:(y/7)+'%'});
+const mmss=s=>Math.floor(s/60)+':'+String(Math.round(s)%60).padStart(2,'0');
+class Component extends DCLogic{planRef=el=>{if(!el||this.planEl===el)return;this.planEl=el;this.ro&&this.ro.disconnect();this.ro=new ResizeObserver(es=>{const w=es[0].contentRect.width;if(w&&Math.abs(w/1000-(this.state.ps||0))>0.001)this.setState({ps:w/1000});});this.ro.observe(el);};
+state={flow:'without',step:0,tw:{from:0,to:0,t0:0}};
+componentDidMount(){this.fit=()=>{const el=document.querySelector('[data-plan-box]');const w=el?el.getBoundingClientRect().width:0;if(w>0&&Math.abs(w/1000-(this.state.ps||0))>0.0005)this.setState({ps:w/1000});};window.addEventListener('resize',this.fit);this.fitI=setInterval(this.fit,200);requestAnimationFrame(this.fit);this.onKey=e=>{if(e.key==='ArrowRight')this.next();if(e.key==='ArrowLeft')this.prev();};window.addEventListener('keydown',this.onKey);}
+componentWillUnmount(){clearInterval(this.fitI);window.removeEventListener('resize',this.fit);this.ro&&this.ro.disconnect();window.removeEventListener('keydown',this.onKey);clearTimeout(this.tmr);}
+go(flow,step){const st=F[flow].steps[step];const to=typeof st.sec==='number'?st.sec:0;this.setState({flow,step,tw:{from:this.curSec||0,to,t0:Date.now()}});}
+setFlow(f){this.go(f,0);}
+next(){const s=this.state,n=F[s.flow].steps.length;if(s.step<n-1)this.go(s.flow,s.step+1);else if(s.flow==='without')this.setFlow('with');else this.setFlow('without');}
+prev(){const s=this.state;if(s.step>0)this.go(s.flow,s.step-1);}
+renderVals(){
+const s=this.state,fl=F[s.flow],st=fl.steps[s.step],isW=s.flow==='with';
+const pos={W:P.W[st.W],C:P.C[st.C],M:P.M[st.M]};
+const ppl=[['W','Waiter','qW','glowW',['-20px','-26px']],['C','Chef','qC','glowC',['30px','-26px']],['M','Manager','qM','glowM',['-26px','10px']]].map(([k,label,q,g,qp])=>{const p=pct(...pos[k]);return{...p,letter:k,isW:k==='W',isC:k==='C',isM:k==='M',label,qS:st[q]?1:0,qx:qp[0],qy:qp[1],glowW:st[g]?'8px':'0px',glowC:st[g]?'oklch(0.80 0.10 75 / .35)':'transparent'};});
+let pp=PASS,pScale=1,steam=1,ringW='0px',ringC='transparent';
+if(st.plate==='none')pScale=0;if(st.plate==='cold')steam=0;
+if(st.plate==='carry'){pp=[P.W.pass[0]+40,P.W.pass[1]+30];}
+if(st.plate==='served'){pp=[SEAT3[0]+38,SEAT3[1]-10];ringW='6px';ringC='oklch(0.86 0.20 152 / .45)';}
+if(st.plate==='hot'&&isW&&s.step===1){ringW='6px';ringC='oklch(0.80 0.10 75 / .45)';}
+const plate={...pct(...pp),s:pScale,steam,ringW,ringC};
+const seats=[[150,118],[95,215],[205,215]].map(([x,y],i)=>({...pct(x,y),qS:st.guestsQ?1:0,ringW:i===2?'4px':(st.plate==='served'&&i===2?'6px':'0px'),ringC:i===2?(st.plate==='served'?GREEN:GOLD):'transparent'}));
+const tables=[['T2',350,180],['T3',550,180],['T4',150,400],['T5',350,400],['T6',550,400],['T7',260,560],['T8',460,560]].map(([id,x,y])=>({id,...pct(x,y),o:1}));
+const cpos=pos.C;const waves=[0,1,2].map(i=>({...pct(...cpos),d:(i*0.8)+'s',show:st.waves?'block':'none'}));
+const bpos=st.at||(st.bub[1]==='G'?[262,112]:[pos[st.bub[1]][0],pos[st.bub[1]][1]-40]);const right=bpos[0]>600;
+const bk=s.flow+s.step;const fresh=this._bk!==bk;this._bk=bk;
+const bub={...pct(bpos[0],bpos[1]),tx:st.tx||(st.bub[1]==='G'?'0%':right?'-100%':'-30%'),who:st.bub[0],text:st.bub[2],o:1,y:'0px'};
+const phones=[{on:st.phW,at:st.ring?[420,266]:[300,24],title:st.ring?'T1 · Hot pass':'T1 · Seat 3 confirmed',sub:st.ring?'Collect within 1:00':'Mains on the pass',ring:st.ring},{on:st.phM,at:[200,458],title:'T1 · Allergy confirmed',sub:'Nothing to chase',ring:0}].map(ph=>{const [x,y]=ph.at;return{l:(x/10)+'%',t:(y/7)+'%',o:ph.on?1:0,y:ph.on?'0px':'10px',title:ph.title,sub:ph.sub,ringD:ph.ring?'block':'none',dotD:ph.ring?'none':'block'};});
+const newGuests=[0,1].map(i=>({...pct(st.newG?110+i*32:40+i*32,st.newG?585:690),o:st.newG?1:0}));
+const tw=s.tw,tp=Math.min(1,(Date.now()-tw.t0)/800),te=1-Math.pow(1-tp,3),cur=tw.from+(tw.to-tw.from)*te;this.curSec=cur;if(tp<1){clearTimeout(this.tmr);this.tmr=setTimeout(()=>this.forceUpdate(),33);}
+const secV=typeof st.sec==='string'?st.sec:st.sec==null?'—':mmss(cur);
+const bad=(!isW&&s.step>=2);
+const counters=[
+{label:'Plate on the pass',value:secV,edge:bad?RED:(isW&&s.step>=3?GREEN:LINE),glow:bad?'0 0 32px oklch(0.70 0.22 25 / .18)':(isW&&s.step>=3?'0 0 32px oklch(0.86 0.20 152 / .14)':'none')},
+{label:'Staff on the floor',value:st.staff+' of 2',edge:st.staff===0?RED:(isW?GREEN:LINE),glow:st.staff===0?'0 0 32px oklch(0.70 0.22 25 / .18)':'none'},
+{label:'Guests unattended',value:st.un,edge:(st.un!=='—'&&st.un!=='0 min')?RED:(isW&&st.un==='0 min'?GREEN:LINE),glow:'none'}];
+const n=fl.steps.length;
+const steps=fl.steps.map((x,i)=>({num:String(i+1).padStart(2,'0'),title:x.t,desc:x.d,roles:x.r,cardClass:i===s.step?'is-active':'',go:()=>this.go(s.flow,i),bg:i===s.step?'oklch(0.95 0.004 70)':'transparent',rows:i===s.step?'1fr':'0fr',numC:i===s.step?(isW?'#A87A3F':fl.accent):(i<s.step?'oklch(0.16 0.006 50)':'oklch(0.68 0.008 60)'),titleC:i<=s.step?'oklch(0.16 0.006 50)':'oklch(0.62 0.008 60)',w:i===s.step?600:500}));
+const nextLabel=s.step<n-1?'Next: '+fl.steps[s.step+1].t:(isW?'Replay without the app':'See it with the app');
+const sigW=pos.W,sigM=pos.M;
+return{activeDescription:fl.steps[s.step].d,withoutSelected:!isW,withSelected:isW,planScale:s.ps||0.6,glowRed:isW?0:1,glowGold:isW?1:0,pillX:isW?'100%':'0%',tabAFg:isW?'oklch(0.16 0.006 50)':'#FFFFFF',tabBFg:isW?'#FFFFFF':'oklch(0.16 0.006 50)',
+pickWithout:()=>this.setFlow('without'),pickWith:()=>this.setFlow('with'),
+tables,seats,people:ppl,plate,waves,newGuests,phones,bub,counters,
+aloneO:st.alone?1:0,spotO:st.spot?1:0,sigO:st.sig?1:0,sigW:{x:sigW[0],y:sigW[1]},sigM:{x:sigM[0],y:sigM[1]},
+flowEyebrow:fl.eyebrow,stepCount:String(s.step+1).padStart(2,'0')+' / '+String(n).padStart(2,'0'),progW:((s.step+1)/n*100)+'%',accent:fl.accent,
+steps,next:()=>this.next(),prev:()=>this.prev(),prevO:s.step>0?1:0.35,nextLabel};}}
+</script>
+<script>let flowHeightFrame=0;const reportFlowHeight=()=>{if(flowHeightFrame)return;flowHeightFrame=requestAnimationFrame(()=>{flowHeightFrame=0;window.parent.postMessage({type:'oblix:flow-height',height:Math.ceil(document.querySelector('.service-flow-layout')?.getBoundingClientRect().height||document.body.scrollHeight)},location.origin);});};const flowResize=new ResizeObserver(reportFlowHeight);flowResize.observe(document.body);let observedFlow=null;new MutationObserver(()=>{const layout=document.querySelector('.service-flow-layout');if(layout&&layout!==observedFlow){observedFlow=layout;flowResize.observe(layout);}reportFlowHeight();}).observe(document.body,{childList:true,subtree:true});addEventListener('load',reportFlowHeight);addEventListener('message',e=>{if(e.origin===location.origin&&e.source===window.parent&&e.data?.type==='oblix:flow-visibility')document.documentElement.classList.toggle('flow-paused',!e.data.visible);});</script></body>
+</html>
