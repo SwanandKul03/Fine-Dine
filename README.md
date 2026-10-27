@@ -1,34 +1,74 @@
 # Fine Dine
 
-A UX and service-design case study by Swanand Kulkarni, informed by restaurant operations at Oblix, The Shard, London.
+A restaurant-service app concept and UX case study by Swanand Kulkarni.
 
-The concept explores how waiters, chefs and floor managers can coordinate guest requirements, preparation updates and dish collection.
+Fine Dine explores how waiters, chefs and floor managers can coordinate orders, guest requirements, preparation updates and dish collection in a busy, low-light dining environment.
 
-## Explore
+## Project background
 
-The case study includes the problem and design process, annotated interface decisions, an interactive service-flow comparison, the working team-app prototype, earlier and revised screens, evaluation tasks and project learnings.
+I initiated this independent project while working in operations at Oblix, The Shard, London. My experience on the floor helped me identify repeated checks, verbal updates and handovers that depended on finding the right colleague.
+
+The project explores how a shared digital interface could support those interactions while keeping staff focused on guests.
+
+## Design focus
+
+- Keep guest requirements connected to the correct table and seat.
+- Make preparation progress and delays easier to identify.
+- Show who is collecting a dish.
+- Provide clear next actions for each service role.
+- Support quick interactions in low-light working conditions.
+
+## Explore the case study
+
+The website includes:
+
+- Service problems and design objectives.
+- Process, observations and interface decisions.
+- An interactive service-flow comparison.
+- A working product prototype.
+- Earlier and revised interface screens.
+- Evaluation tasks, outcomes and learnings.
 
 ## Run locally
 
-This is a static website with local fonts and assets. No installation or build step is required.
+No installation or build step is required.
 
-```sh
-python3 -m http.server 8000
-```
+From the project folder, run:
 
-Open http://localhost:8000. Use a local web server so the embedded prototype and service-flow messages share the same origin.
+    python3 -m http.server 8000
 
-## Files
+Then open:
 
-- `index.html` — case-study content.
-- `component-case.css` and `motion-system.css` — responsive styling and motion.
-- `component-case.js` and `motion-system.js` — navigation, annotations and interactions.
-- `prototype/` — interactive restaurant team-app concept.
-- `service-flows/` — comparison of service handovers.
-- `assets/` — interface screens, imagery and local fonts.
+    http://localhost:8000
 
-## Project scope
+Use a local web server so the embedded prototype and service-flow interactions work correctly.
 
-This is an independent product concept. The service-flow timings illustrate a scenario; they are not measured operational results. Operational integration and service-condition evaluation remain outside the prototype's scope.
+## Project structure
 
-Third-party font licences and bundled runtime licence notices are retained with their assets.
+    index.html
+    component-case.css
+    component-case.js
+    motion-system.css
+    motion-system.js
+    assets/
+    prototype/
+    service-flows/
+
+## Built with
+
+HTML, CSS and JavaScript, with locally hosted fonts and assets.
+
+The case study supports responsive layouts, keyboard navigation and reduced-motion preferences.
+
+## Scope
+
+Fine Dine is an independent design concept. The service-flow timings illustrate a scenario and are not measured operational results.
+
+Integration with restaurant systems and evaluation during live service remain future work.
+
+## Author
+
+Swanand Kulkarni  
+UX Designer & Developer
+
+[Portfolio](https://swanand-kulkarni.framer.website/)
