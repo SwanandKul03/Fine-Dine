@@ -1,74 +1,58 @@
 # Fine Dine
 
-A restaurant-service app concept and UX case study by Swanand Kulkarni.
+A restaurant-service app concept and UX / service design case study by Swanand Kulkarni, informed by my work at Oblix, The Shard, London.
 
-Fine Dine explores how waiters, chefs and floor managers can coordinate orders, guest requirements, preparation updates and dish collection in a busy, low-light dining environment.
+[View the case study](https://swanandkul03.github.io/Fine-Dine/)
 
-## Project background
+## What the project explores
 
-I initiated this independent project while working in operations at Oblix, The Shard, London. My experience on the floor helped me identify repeated checks, verbal updates and handovers that depended on finding the right colleague.
+Paper order taking and in-person updates meant staff had to find colleagues to confirm requirements, check preparation and coordinate collection. Fine Dine connects those tasks across waiters, chefs and floor managers.
 
-The project explores how a shared digital interface could support those interactions while keeping staff focused on guests.
+- Research from service observations and staff handovers.
+- Original app screens and a connected Floor, Kitchen and Alerts prototype.
+- A service story with character dialogue, workflow comparison and an evening restaurant setting.
+- Staff feedback, timing comparisons and a 90-minute service Gantt chart.
+- Selectable earlier/revised screens.
 
-## Design focus
-
-- Keep guest requirements connected to the correct table and seat.
-- Make preparation progress and delays easier to identify.
-- Show who is collecting a dish.
-- Provide clear next actions for each service role.
-- Support quick interactions in low-light working conditions.
-
-## Explore the case study
-
-The website includes:
-
-- Service problems and design objectives.
-- Process, observations and interface decisions.
-- An interactive service-flow comparison.
-- A working product prototype.
-- Earlier and revised interface screens.
-- Evaluation tasks, outcomes and learnings.
+The phone layout keeps complete screens, controls and dialogue together. The original prototype colours and typography are retained; the embedded viewport scales proportionally rather than stretching.
 
 ## Run locally
 
-No installation or build step is required.
+No dependency installation or build step is required. From the repository folder:
 
-From the project folder, run:
+```sh
+python3 -m http.server 8000
+```
 
-    python3 -m http.server 8000
+Open `http://localhost:8000`. Use a local web server so the prototype and embedded service story can communicate correctly.
 
-Then open:
+## Project files
 
-    http://localhost:8000
+- `index.html` — case-study content and sections.
+- `component-case.css` / `component-case.js` — editorial layout and screen annotations.
+- `phone-layout.css` / `phone-layout.js` — phone layouts and proportional device fitting.
+- `role-motion.js` / `role-motion.css` — articulated service characters and scene rendering.
+- `evaluation-visual.css` / `evaluation-visual.js` — timing comparisons and service timeline.
+- `prototype/` — the supplied interactive app and its local runtime.
+- `service-flows/` — the published service story.
+- `assets/` — original screen exports, local fonts and comparison images.
 
-Use a local web server so the embedded prototype and service-flow interactions work correctly.
+Edit the service story in `src/service-handover/`, then run:
 
-## Project structure
+```sh
+python3 scripts/build-service-flows.py
+```
 
-    index.html
-    component-case.css
-    component-case.js
-    motion-system.css
-    motion-system.js
-    assets/
-    prototype/
-    service-flows/
-
-## Built with
-
-HTML, CSS and JavaScript, with locally hosted fonts and assets.
-
-The case study supports responsive layouts, keyboard navigation and reduced-motion preferences.
+GitHub Pages serves the static files from the root of `main`; `.nojekyll` preserves the files as supplied.
 
 ## Scope
 
-Fine Dine is an independent design concept. The service-flow timings illustrate a scenario and are not measured operational results.
+This is an independent design concept, rather than a deployed restaurant ordering system. Staff feedback and the reported timing figures are explained in the case study. The unchanged 37–40 minute mains window reflects the guests’ pace. Restaurant-system integration and a controlled live-service evaluation remain further work.
 
-Integration with restaurant systems and evaluation during live service remain future work.
+The service dialogue illustrates the handover scenarios. Keyboard controls, reduced-motion preferences and responsive phone layouts are supported.
 
 ## Author
 
-Swanand Kulkarni  
-UX Designer & Developer
+Swanand Kulkarni · UX Designer & Developer
 
 [Portfolio](https://swanand-kulkarni.framer.website/)
