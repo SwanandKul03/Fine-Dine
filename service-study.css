@@ -318,3 +318,7 @@
 #solution[data-type-system] .eyebrow{font-size:12px!important;line-height:1.4!important;font-weight:600}
 @media(min-width:900px){html:has(#solution:target){scroll-padding-top:0}#solution[data-type-system]{height:100svh;min-height:0;padding-block:20px;display:grid;grid-template-rows:auto minmax(0,1fr);gap:16px;scroll-margin-top:0}#solution[data-type-system] .section-heading{margin:0!important;gap:32px;align-items:start}#solution[data-type-system] .service-flow-shell{height:100%;min-height:0;overflow:hidden;border-radius:8px}#solution[data-type-system] #service-flow-demo{height:100%!important;min-height:0}}
 @media(max-width:899px){#solution[data-type-system]{padding-block:44px}#solution[data-type-system] .section-heading{margin-bottom:24px!important}#solution[data-type-system] .section-heading h2{font-size:30px!important}}
+
+/* Keep the complete handover section inside the visible frame at every breakpoint. */
+html:has(#solution:target){scroll-padding-top:0}
+#solution[data-type-system]{scroll-margin-top:0;overflow-anchor:none}

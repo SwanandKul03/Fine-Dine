@@ -1,7 +1,36 @@
-<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fine Dine — A table through service</title><link rel="stylesheet" href="../assets/fonts.css"><link rel="stylesheet" href="handover.css"><script src="../role-motion.js" defer></script><script src="handover.js" defer></script></head><body>
-<main class="floor-story" id="floor-story" data-mode="without" data-moment="0">
-<header class="story-header"><h1>Table 1 <span>· Four guests</span></h1><div class="story-switches"><div class="workflow-switch" role="group" aria-label="Service workflow"><button type="button" data-workflow="without" aria-pressed="true">Without the app</button><button type="button" data-workflow="with" aria-pressed="false">With the app</button></div><button type="button" id="play-story" aria-pressed="false">Play story</button></div></header>
-<nav class="visit-chapters" aria-label="Choose a moment in the visit" id="visit-chapters"></nav>
-<div class="story-stage"><figure class="room-view"><div class="room-camera" id="room-camera" tabindex="0" aria-label="Restaurant floor. On mobile, swipe or choose a role to follow the work."><div class="floor-canvas-width"><service-floor id="floor-stage" moment="0" workflow="without" focus-role="waiter"></service-floor><div class="scene-zones" aria-hidden="true"><span>Kitchen pass</span><span>Service aisle</span><span>Table 1 · Four guests</span></div><div class="secondary-table-labels" aria-hidden="true"><span>Table 2 · Two guests</span><span>Table 3 · Three guests</span></div></div></div><div class="room-views" role="group" aria-label="Follow a person’s task"><button type="button" data-actor="chef" aria-pressed="false">Chef</button><button type="button" data-actor="waiter" aria-pressed="true">Waiter</button><button type="button" data-actor="manager" aria-pressed="false">Manager</button><button type="button" data-actor="guest" aria-pressed="false">Guests</button></div></figure>
-</div>
-</main></body></html>
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fine Dine — From the pass to the guest</title>
+<link rel="stylesheet" href="../assets/fonts.css">
+<link rel="stylesheet" href="handover.css">
+<script src="../role-motion.js" defer></script>
+<script src="handover.js" defer></script>
+</head>
+<body>
+<main id="floor-story" class="handover-story" data-mode="without" data-step="0">
+ <header class="story-header">
+  <div class="story-title"><span class="story-kicker">The collection handover</span><h1>Table 1 <span>· Starters for four</span></h1></div>
+  <div class="story-switches">
+   <div class="workflow-switch" role="group" aria-label="Compare the service workflows"><button type="button" data-workflow="without" aria-pressed="true">Without the app</button><button type="button" data-workflow="with" aria-pressed="false">With the app</button></div>
+   <button type="button" id="play-story" aria-pressed="false" aria-label="Play the handover"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="play-glyph" d="M7 4.5 15 10 7 15.5Z"/><path class="pause-glyph" d="M6 5V15M13 5V15"/></svg><span>Play</span></button>
+  </div>
+ </header>
+ <figure class="handover-room" aria-label="Follow the same characters from food readiness to collection and service">
+  <handover-spotlight id="floor-stage"></handover-spotlight>
+  <div class="room-locations" aria-hidden="true"><span>Kitchen pass</span><span>Collection aisle</span><span>Table 1</span></div>
+  <span class="focused-location" aria-hidden="true">Kitchen pass</span>
+ </figure>
+ <div class="handover-track" aria-live="polite" aria-atomic="true">
+  <div class="handover-ticket" data-gap="true"><span class="ticket-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 20h20M6 17a8 8 0 0 1 16 0ZM14 7V5M12 5h4"/></svg></span><div><strong id="handover-state">Food is ready</strong><span id="handover-owner">No collector confirmed</span></div><span class="ticket-dot" aria-hidden="true"></span></div>
+ </div>
+ <nav class="handover-chapters" aria-label="Choose a step in the handover">
+  <button type="button" data-step="0" aria-current="step"><span class="step-dot" aria-hidden="true"></span><span><strong>Food ready</strong><small>At the pass</small></span></button>
+  <button type="button" data-step="1"><span class="step-dot" aria-hidden="true"></span><span><strong>Collection</strong><small id="collection-label">Find a collector</small></span></button>
+  <button type="button" data-step="2"><span class="step-dot" aria-hidden="true"></span><span><strong>At the table</strong><small>Handover to guests</small></span></button>
+ </nav>
+</main>
+</body>
+</html>
